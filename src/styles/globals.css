@@ -1,0 +1,12 @@
+:root {
+  --blue: #6495ed;
+  --white: #faf0e6;
+}
+
+.box {
+  border: solid red ;
+}
+.sec {
+  padding: 4rem 0;
+}
+
