@@ -1,14 +1,21 @@
 import React from "react"
+import { Grid } from "@material-ui/core"
 
 const Layout = ({ children }) => {
 	return (
-		<div className=''>
-			{/* <Nav /> */}
-			<div>{children}</div>
+		<Grid >
 
-			{/* <Footer /> */}
-		</div>
+		{children}
+
+	
+		</Grid>
 	)
 }
 
 export default Layout
+
+
+			// {/* <Nav /> */}
+			// {children}
+
+			// {/* <Footer /> */}

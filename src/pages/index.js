@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 import Hero from "../components/Hero"
 import AboutInfo from "../components/AboutInfo"
+import Contact from "../components/Contact"
 
 export default function Index() {
 	return (
@@ -19,6 +20,8 @@ export default function Index() {
 				text1='here is some text about me company'
 				text2='here is some text about me company'
 			/>
+			<Contact/>
+
 
 			<Box my={4}>
 				<Typography variant='h4' component='h1' gutterBottom>
