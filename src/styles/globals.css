@@ -9,4 +9,11 @@
 .sec {
   padding: 4rem 0;
 }
+footer {
+  background-color: var(--blue);
+  display: flex;
+  text-align: center;
+  /* align-content: center; */
+
+}
 

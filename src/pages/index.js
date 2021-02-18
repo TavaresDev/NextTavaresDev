@@ -5,6 +5,7 @@ import Box from "@material-ui/core/Box"
 import Hero from "../components/Hero"
 import AboutInfo from "../components/AboutInfo"
 import Contact from "../components/Contact"
+import Footer from "../components/Footer"
 
 export default function Index() {
 	return (
@@ -22,12 +23,12 @@ export default function Index() {
 			/>
 			<Contact/>
 
-
-			<Box my={4}>
+			<Footer/>
+			{/* <Box my={4}>
 				<Typography variant='h4' component='h1' gutterBottom>
 					Next.js example Home Page
 				</Typography>
-			</Box>
+			</Box> */}
 		</>
 	)
 }
