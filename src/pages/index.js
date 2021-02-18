@@ -6,24 +6,25 @@ import Hero from "../components/Hero"
 import AboutInfo from "../components/AboutInfo"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
+import ComplexGrid from "../ComplexGrid"
 
 export default function Index() {
 	return (
 		<>
 			<Hero heroTitle={'Tavares'} subTitle={'Slogan'} />
+			{/* <ComplexGrid/> */}
 			<AboutInfo
+				order={2}
 				text1='here is some text about me company'
 				text2='here is some text about me company'
-			/>
+				/>
 			<AboutInfo
-				bg='bg-info'
-				order={"order-lg-2 order-md-1"}
+				bg='bgPrimary'
 				text1='here is some text about me company'
 				text2='here is some text about me company'
-			/>
-			<Contact/>
-
-			<Footer/>
+				/>
+				<Contact/>
+	
 			{/* <Box my={4}>
 				<Typography variant='h4' component='h1' gutterBottom>
 					Next.js example Home Page

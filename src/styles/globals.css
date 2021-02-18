@@ -9,6 +9,9 @@
 .sec {
   padding: 4rem 0;
 }
+.bgPrimary {
+  background-color: var(--blue);
+}
 footer {
   background-color: var(--blue);
   display: flex;
