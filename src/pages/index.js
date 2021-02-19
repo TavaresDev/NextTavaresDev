@@ -16,7 +16,7 @@ export default function Index() {
 			<Hero heroTitle={'Expand your reach while you do what you love'} subTitle={'Slogan'} />
 			{/* <ComplexGrid/> */}
 
-			<Color/>
+			{/* <Color/> */}
 	
 			<AboutInfo
 				order={2}

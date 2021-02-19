@@ -18,6 +18,7 @@ const theme = createMuiTheme({
       default: '#fff',
       primary: '#6495ed',
       paper:'#6495ed',
+      // paper:'#fff',
     },
   },
 });

@@ -1,10 +1,50 @@
-import { defaultFont } from "./../nextjs-material-kit.js";
+import { container, title, grayColor } from "./../nextjs-material-kit.js";
 
-import tooltip from "./tooltipsStyle.js";
 
-const headerLinksStyle = theme => ({
+const navbarsStyle = theme => ({
+  section: {
+    padding: "70px 0",
+    paddingTop: "0"
+  },
+  container,
+  title: {
+    ...title,
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none"
+  },
+  navbar: {
+    marginBottom: "-20px",
+    zIndex: "100",
+    position: "relative",
+    overflow: "hidden",
+    "& header": {
+      borderRadius: "0"
+    }
+  },
+  navigation: {
+    backgroundPosition: "center center",
+    backgroundSize: "cover",
+    marginTop: "0",
+    minHeight: "740px"
+  },
+  formControl: {
+    [theme.breakpoints.down("md")]: {
+      margin: "10px 0 0 15px !important",
+      color: grayColor
+    },
+    margin: "10px 0 0 0 !important",
+    paddingTop: "0"
+  },
+  inputRootCustomClasses: {
+    margin: "0!important"
+  },
+  searchIcon: {
+    width: "20px",
+    height: "20px",
+    color: "inherit"
+  },
   list: {
-    ...defaultFont,
     fontSize: "14px",
     margin: 0,
     paddingLeft: "0",
@@ -63,63 +103,21 @@ const headerLinksStyle = theme => ({
       }
     }
   },
-  notificationNavLink: {
+  img: {
+    width: "40px",
+    height: "40px",
+    borderRadius: "50%"
+  },
+  imageDropdownButton: {
     [theme.breakpoints.down("md")]: {
       top: "0",
       margin: "5px 15px"
     },
-    color: "#FFF",
-    padding: "0.9375rem",
-    fontWeight: "400",
-    fontSize: "12px",
-    textTransform: "uppercase",
-    lineHeight: "20px",
-    textDecoration: "none",
-    margin: "0px",
-    display: "inline-flex",
-    top: "4px"
-  },
-  registerNavLink: {
-    [theme.breakpoints.down("md")]: {
-      top: "0",
-      margin: "5px 15px"
-    },
-    top: "3px",
-    position: "relative",
-    fontWeight: "400",
-    fontSize: "12px",
-    textTransform: "uppercase",
-    lineHeight: "20px",
-    textDecoration: "none",
-    margin: "0px",
-    display: "inline-flex"
-  },
-  navLinkActive: {
-    color: "inherit",
-    backgroundColor: "rgba(255, 255, 255, 0.1)"
-  },
-  icons: {
-    width: "20px",
-    height: "20px",
-    marginRight: "3px"
-  },
-  socialIcons: {
-    position: "relative",
-    fontSize: "20px !important",
-    marginRight: "4px"
-  },
-  dropdownLink: {
-    "&,&:hover,&:focus": {
-      color: "inherit",
-      textDecoration: "none",
-      display: "block",
-      padding: "10px 20px"
-    }
-  },
-  ...tooltip,
-  marginRight5: {
-    marginRight: "5px"
+    padding: "0px",
+    top: "4px",
+    borderRadius: "50%",
+    marginLeft: "5px"
   }
 });
 
-export default headerLinksStyle;
+export default navbarsStyle;
