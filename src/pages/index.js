@@ -13,7 +13,7 @@ import ComplexGrid from "../ComplexGrid"
 export default function Index() {
 	return (
 		<>
-			<Hero heroTitle={'Tavares'} subTitle={'Slogan'} />
+			<Hero heroTitle={'Expand your reach while you do what you love'} subTitle={'Slogan'} />
 			{/* <ComplexGrid/> */}
 
 			<Color/>
