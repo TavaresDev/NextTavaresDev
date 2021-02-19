@@ -1,4 +1,4 @@
-import { container, title, grayColor } from "./../nextjs-material-kit.js";
+import { container, title, grayColor } from "../../styles/nextjs-material-kit.js";
 
 
 const navbarsStyle = theme => ({

@@ -1,13 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Head from "next/head"
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles"
+import { ThemeProvider } from "@material-ui/core/styles"
 import CssBaseline from "@material-ui/core/CssBaseline"
-import theme from "../../public/theme"
-import darkTheme from "../../public/darkTheme"
+
+import darkTheme from "./../styles/themes/darkTheme"
+import theme from "./../styles/themes/theme"
 import Layout from "../components/Layout"
 import "../styles/globals.css"
-import { Paper } from "@material-ui/core"
+
 
 export default function MyApp({ Component, pageProps }) {
 	React.useEffect(() => {

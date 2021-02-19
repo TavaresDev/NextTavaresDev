@@ -29,7 +29,7 @@ const MyNavbar = () => {
                     href="#pablo"
                     className={classes.navLink + " " }
                     onClick={e => e.preventDefault()}
-                    color="transparent"
+                  
                   >
                     Discover
                   </Button>
@@ -39,7 +39,7 @@ const MyNavbar = () => {
                     href="#pablo"
                     className={classes.navLink}
                     onClick={e => e.preventDefault()}
-                    color="transparent"
+                  
                   >
                     Profile
                   </Button>
@@ -49,7 +49,7 @@ const MyNavbar = () => {
                     href="#pablo"
                     className={classes.navLink}
                     onClick={e => e.preventDefault()}
-                    color="transparent"
+                  
                   >
                     Settings
                   </Button>
