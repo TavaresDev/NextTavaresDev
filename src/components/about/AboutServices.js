@@ -4,6 +4,7 @@ import SimpleCard from "./ProductCard"
 
 
 
+
 const AboutServices = () => {
 
     const myItems = [{ name: 'item 1' }, { name: 'item2' }];
@@ -12,7 +13,7 @@ const AboutServices = () => {
     
 	return (
 		<Container className='sec'>
-			<Grid container >
+			<Grid container  >
 				<Grid item xs={12}  align='center'>
 					<Typography variant={"h2"} >
 						What we do
@@ -26,12 +27,12 @@ const AboutServices = () => {
 						<Typography variant={"h5"}>Products</Typography>
 					</Box>
 				</Grid>
-				<Grid item container xs={12} className=''>
-					<Grid item xs={12} md={6} align='center' >
+				<Grid item container  spacing={4} xs={12} className=''>
+					<Grid item xs={12} md={6} align='center'  >
 	
                         <SimpleCard title={'Landing Page'} adjective={'Fast, Reliable, SEO facused'}  text={text}/>
 					</Grid>
-					<Grid item xs={12} md={6} align='center' >
+					<Grid item xs={12} md={6} align='center'  >
 
                         <SimpleCard title={'Ecommerce'} adjective={'Fast, Reliable, SEO facused'}  text={text}/>
              

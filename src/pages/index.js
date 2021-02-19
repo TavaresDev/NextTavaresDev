@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 import Hero from "../components/Hero"
 import AboutInfo from "../components/AboutInfo"
+import Color from "../components/Color"
 import AboutServices from "../components/about/AboutServices"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
@@ -14,6 +15,8 @@ export default function Index() {
 		<>
 			<Hero heroTitle={'Tavares'} subTitle={'Slogan'} />
 			{/* <ComplexGrid/> */}
+
+			<Color/>
 	
 			<AboutInfo
 				order={2}

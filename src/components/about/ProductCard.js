@@ -5,13 +5,19 @@ import CardActions from "@material-ui/core/CardActions"
 import CardContent from "@material-ui/core/CardContent"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
-import { grey } from "@material-ui/core/colors"
+import { blue, green, grey } from "@material-ui/core/colors"
+
 
 const useStyles = makeStyles({
 	root: {
 		minWidth: 300,
 		maxWidth: 420,
-		background: grey[300],
+		background: 'palette.primary.main',
+		transition: 'all .3s ease-in',
+	'&:hover': {
+		// background: green[200],
+		background: green[300],
+		color: 'white'
 	},
 	bullet: {
 		display: "inline-block",
@@ -24,18 +30,17 @@ const useStyles = makeStyles({
 	pos: {
 		marginBottom: 12,
 	},
-})
+}})
 
 export default function SimpleCard({ title, adjective, text }) {
 	const classes = useStyles()
 
 	return (
-		<Card className={classes.root}>
+		<Card className={classes.root} elevation={3} >
 			<CardContent>
 				<Typography
 					variant='h5'
 					component='h3'
-					color='textPrimary'
 					gutterBottom>
 					{title}
 				</Typography>

@@ -1,0 +1,9 @@
+.card {
+  background-color: var(--blue);
+  /* background-color: blue;
+  border: seagreen solid; */
+  
+  width: 18rem;
+  border-radius: 8%;
+  margin: 3rem;
+}
