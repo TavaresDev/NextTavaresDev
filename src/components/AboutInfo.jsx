@@ -54,7 +54,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 					<Grid item container xm={12} sm={12} md={6}>
 						<Box m='auto' className=''>
 							<Image
-								src='/undraw_Code_thinking_re_gka2.svg'
+								src='/designerColor.svg'
 								alt='Picture of the author'
 								// layout='responsive'
 								width={400}
@@ -72,7 +72,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 						<Grid item container xm={order - 2} xm={12} sm={12} md={6}>
 							<Box m='auto' className=''>
 								<Image
-									src='/undraw_dev.svg'
+									src='/undraw_Code_thinking_re_gka2.svg'
 									alt='Picture of the author'
 									// layout='responsive'
 									width={350}

@@ -8,13 +8,18 @@ import Footer from "../components/Footer"
 import ComplexGrid from "../components/ComplexGrid"
 
 export default function Index() {
+
+	// const heroTitle= {<span > Tavares </span> Web Solutions }
+
+
 	return (
 		<>
-			<Hero heroTitle={'Expand your reach while you do what you love'} subTitle={'Slogan'} />
+			<Hero heroTitle={'web solutions'} subTitle={'Worry about your business, we make your'} />
 			{/* <ComplexGrid/> */}
 
 			{/* <Color/> */}
 	
+			<AboutServices/>
 			<AboutInfo
 				order={2}
 				text1='here is some text about me company'
@@ -25,7 +30,6 @@ export default function Index() {
 				text1='here is some text about me company'
 				text2='here is some text about me company'
 				/>
-						<AboutServices/>
 				<Contact/>
 	
 	
