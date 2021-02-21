@@ -32,20 +32,28 @@ const useStyles = makeStyles({
 	},
 })
 
-export default function SimpleCard({ title, adjective, text }) {
+export default function SimpleCard({ title, adjective, text, icon }) {
 	const classes = useStyles()
 	const bull = <span className={classes.bullet}>•</span>
 
 	return (
 		<Card className={classes.root} elevation={3}>
 			<CardContent>
+				<Grid item container  align='start'>
+					<Grid item >
+						<Box ml={4}>
+
+						{icon}
+						</Box>
+						</Grid> 
+				</Grid>
 				<Typography variant='h5' component='h3' gutterBottom>
 					{title}
-				</Typography>
+				</Typography>]
 
-				<Typography className={classes.pos} color='textSecondary'>
+				{/* <Typography className={classes.pos} color='textSecondary'>
 					{adjective}
-				</Typography>
+				</Typography> */}
 
 				<Container>
 					<Typography variant='body2' component='p'>
@@ -55,19 +63,11 @@ export default function SimpleCard({ title, adjective, text }) {
 					<Typography variant='body2' component='p'>
 						<Box p={1}>{text}</Box>
 					</Typography>
-
-					<Typography variant='body2' component='p'>
-						<Box p={1}>{text}</Box>
-					</Typography>
-
-					<Typography p={2} variant='body2' component='p'>
-						<Box p={1}>{text}</Box>
-					</Typography>
 				</Container>
 			</CardContent>
-			<Box m={2}>
+			{/* <Box m={2}>
 				<Button size='small'>Learn More</Button>
-			</Box>
+			</Box> */}
 		</Card>
 	)
 }
