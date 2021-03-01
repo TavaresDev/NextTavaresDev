@@ -37,7 +37,7 @@ const AboutServices = () => {
 						<SimpleCard
 							icon={<WebIcon fontSize="large" />}
 							title={"Landing Page"}
-							adjective={"Fast, Reliable, SEO facused"}
+							adjective={"Fast, Reliable, SEO focused"}
 							text={text}
 						/>
 					</Grid>
@@ -45,7 +45,7 @@ const AboutServices = () => {
 						<SimpleCard
 						icon={<StoreIcon fontSize="large"/>}
 							title={"Ecommerce"}
-							adjective={"Fast, Reliable, SEO facused"}
+							adjective={"Fast, Reliable, SEO focused"}
 							text={ecommerceText}
 						/>
 					</Grid>

@@ -1,14 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import { Container, Grid, Box, Button, Typography } from "@material-ui/core"
 import TextField from "@material-ui/core/TextField"
 import emailjs from "emailjs-com"
+import ContactModal from "./contactModal"
 
 const Contact = () => {
-	const [value, setValue] = React.useState("")
+	const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
-	const handleChange = (event) => {
-		setValue(event.target.value)
-		console.log("p_ID")
+	const closeModal = () => {
+		setIsContactModalOpen(false)
+		console.log("close")
+		document.getElementById("contactForm").reset();
 	}
 	const sendEmail = (e) => {
 		e.preventDefault()
@@ -22,11 +24,13 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text)
+					setIsContactModalOpen(true)
 				},
 				(error) => {
 					console.log(error.text)
 				}
 			)
+		// e.target.reset()
 	}
 
 	return (
@@ -41,6 +45,7 @@ const Contact = () => {
 					direction='column'
 					justify='center'
 					alignItems='stretch'
+					id = 'contactForm'
 					component='form'
 					onSubmit={sendEmail}>
 					<Box mb={5}>
@@ -69,6 +74,7 @@ const Contact = () => {
 
 				<Grid item xm={0} sm={3} />
 			</Grid>
+			{isContactModalOpen && <ContactModal closeModal={closeModal} />}
 		</Container>
 	)
 }

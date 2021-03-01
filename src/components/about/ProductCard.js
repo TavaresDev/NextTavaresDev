@@ -39,30 +39,30 @@ export default function SimpleCard({ title, adjective, text, icon }) {
 	return (
 		<Card className={classes.root} elevation={3}>
 			<CardContent>
-				<Grid item container  align='start'>
-					<Grid item >
-						<Box ml={4}>
-
-						{icon}
-						</Box>
-						</Grid> 
+				<Grid item container align='start'>
+					<Grid item>
+						<Box ml={4}>{icon}</Box>
+					</Grid>
 				</Grid>
 				<Typography variant='h5' component='h3' gutterBottom>
 					{title}
-				</Typography>]
-
-				{/* <Typography className={classes.pos} color='textSecondary'>
+				</Typography>
+				
+				<Typography className={classes.pos} color='textSecondary'>
 					{adjective}
-				</Typography> */}
-
+				</Typography>
 				<Container>
-					<Typography variant='body2' component='p'>
-						<Box m={1}>{text}</Box>
-					</Typography>
+					<Box m={1}>
+						<Typography variant='body2' component='p'>
+							{text}
+						</Typography>
+					</Box>
 
-					<Typography variant='body2' component='p'>
-						<Box p={1}>{text}</Box>
-					</Typography>
+					<Box p={1}>
+						<Typography variant='body2' component='p'>
+							{text}
+						</Typography>
+					</Box>
 				</Container>
 			</CardContent>
 			{/* <Box m={2}>

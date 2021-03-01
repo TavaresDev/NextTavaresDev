@@ -3,8 +3,8 @@ import Hero from "../components/Hero"
 import AboutInfo from "../components/AboutInfo"
 import Color from "../components/Color"
 import AboutServices from "../components/about/AboutServices"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
+import Contact from "../components/contact/Contact"
+
 import ComplexGrid from "../components/ComplexGrid"
 
 export default function Index() {

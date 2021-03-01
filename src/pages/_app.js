@@ -6,7 +6,7 @@ import CssBaseline from "@material-ui/core/CssBaseline"
 
 import darkTheme from "./../styles/themes/darkTheme"
 import theme from "./../styles/themes/theme"
-import Layout from "../components/Layout"
+import Layout from "../components/shared/Layout"
 import "../styles/globals.css"
 
 
