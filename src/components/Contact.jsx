@@ -1,31 +1,36 @@
 import React from "react"
-import {
-	Container,
-	Grid,
-	Paper,
-	Box,
-	Button,
-	Typography,
-} from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
+import { Container, Grid, Box, Button, Typography } from "@material-ui/core"
 import TextField from "@material-ui/core/TextField"
-
-const useStyles = makeStyles((theme) => ({
-	// section: {
-	// 	width: "100%",
-	// 	height: 600,
-		
-	// },
-}))
+import emailjs from "emailjs-com"
 
 const Contact = () => {
 	const [value, setValue] = React.useState("")
+
 	const handleChange = (event) => {
 		setValue(event.target.value)
+		console.log("p_ID")
 	}
-	const classes = useStyles()
+	const sendEmail = (e) => {
+		e.preventDefault()
+		emailjs
+			.sendForm(
+				process.env.NEXT_PUBLIC_YOUR_SERVICE_ID,
+				process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID,
+				e.target,
+				process.env.NEXT_PUBLIC_YOUR_USER_ID
+			)
+			.then(
+				(result) => {
+					console.log(result.text)
+				},
+				(error) => {
+					console.log(error.text)
+				}
+			)
+	}
+
 	return (
-		<Container className={'sec'}>
+		<Container className={"sec"}>
 			<Grid container>
 				<Grid item xm={0} sm={3} />
 				<Grid
@@ -35,27 +40,28 @@ const Contact = () => {
 					md={6}
 					direction='column'
 					justify='center'
-					alignItems='stretch'>
+					alignItems='stretch'
+					component='form'
+					onSubmit={sendEmail}>
 					<Box mb={5}>
 						<Typography variant='h4' component='h2'>
 							Get in touch
 						</Typography>
 					</Box>
 
-					<TextField id='standard-basic' label='Name' />
+					<TextField id='' label='Name' name='client_name' />
 
-					<TextField id='standard-basic' label='Email' />
+					<TextField id='standard-basic' label='Email' name='client_email' />
 					<TextField
 						id='standard-multiline-flexible'
 						label='Message'
 						multiline
 						rows={3}
 						rowsMax={10}
-						// value={value}
-						// onChange={handleChange}
+						name='client_message'
 					/>
 					<Box ml='auto' pt={2}>
-						<Button variant='contained' color='primary'>
+						<Button type='submit' variant='contained' color='primary'>
 							Send
 						</Button>
 					</Box>
