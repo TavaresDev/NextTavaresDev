@@ -34,7 +34,7 @@ const Contact = () => {
 	}
 
 	return (
-		<Container className={"sec"}>
+		<Container id='contact' className={"sec"}>
 			<Grid container>
 				<Grid item xm={0} sm={3} />
 				<Grid
@@ -66,7 +66,7 @@ const Contact = () => {
 						name='client_message'
 					/>
 					<Box ml='auto' pt={2}>
-						<Button type='submit' variant='contained' color='primary'>
+						<Button type='submit' variant='contained' color='secondary'>
 							Send
 						</Button>
 					</Box>

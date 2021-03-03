@@ -1,16 +1,14 @@
-import {
-	Container
-} from "@material-ui/core"
+import { Grid, Box, Typography } from "@material-ui/core"
 import React from "react"
-
 
 const Footer = () => {
 	return (
-		<footer>
-			<Container>
-				<p> Developed by Andre tavares</p>
-			</Container>
-		</footer>
+		<Box mt={10} p={2}  bgxcolor='secondary.light'>
+			<Box component='footer'>
+
+			<Typography align="center">Developed by Andre tavares</Typography>
+			</Box>
+		</Box>
 	)
 }
 

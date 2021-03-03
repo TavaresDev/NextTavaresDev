@@ -3,18 +3,16 @@ import React from "react"
 import Header from "./Header"
 import { Grid, List, ListItem, Button } from "@material-ui/core"
 
+import { makeStyles } from "@material-ui/core/styles"
+import styles from "./navbarsStyle.js"
 
-import { makeStyles } from "@material-ui/core/styles";
-import styles from "./navbarsStyle.js";
-
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles(styles)
 const MyNavbar = () => {
-
-	const classes = useStyles();
+	const classes = useStyles()
 
 	return (
 		<Header
-			brand='Me'
+			brand='T'
 			color='transparent'
 			// rightLinks={<HeaderLinks />}
 			fixed
@@ -24,37 +22,33 @@ const MyNavbar = () => {
 			}}
 			leftLinks={
 				<List className={classes.list}>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink + " " }
-                    onClick={e => e.preventDefault()}
-                  
-                  >
-                    Discover
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                  
-                  >
-                    Profile
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                  
-                  >
-                    Settings
-                  </Button>
-                </ListItem>
-              </List>
+					<ListItem className={classes.listItem}>
+						<Button
+							href='#services'
+							className={classes.navLink + " "}
+							// onClick={(e) => e.preventDefault()}
+              >
+							Services
+						</Button>
+					</ListItem>
+					<ListItem className={classes.listItem}>
+						<Button
+							href='#about'
+							className={classes.navLink}
+							onClick={(e) => e.preventDefault()}>
+							About Us
+						</Button>
+					</ListItem>
+					<ListItem className={classes.listItem}>
+						<Button
+							href='#contact'
+							className={classes.navLink}
+							// onClick={(e) => e.preventDefault()}
+              >
+							Contact
+						</Button>
+					</ListItem>
+				</List>
 			}
 			// leftLinks={
 			// 	<Grid container>
