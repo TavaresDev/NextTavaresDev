@@ -8,6 +8,7 @@ import Contact from "../components/contact/Contact"
 import ComplexGrid from "../components/ComplexGrid"
 import Projects from "../components/projects/projects"
 import ProjectCarousel from "../components/projects/ProjectCarousel"
+import AboutServicesCarousel from "../components/about/AboutServicesCarousel"
 
 export default function Index() {
 	// const heroTitle= {<span > Tavares </span> Web Solutions }
@@ -16,13 +17,16 @@ export default function Index() {
 		<>
 			<Hero
 				heroTitle={"web solutions"}
-				subTitle={"Worry about your business, we make your"}
+				heroTitleWord={"Tavares"}
+				subTitle={"We expand your reach, while you do what "}
+				subTitleWord={"you Love "}
 			/>
 			{/* <ComplexGrid />
 
 			<Color /> */}
 
-			<AboutServices />
+			{/* <AboutServices /> */}
+			<AboutServicesCarousel/>
 			<AboutInfo
 				order={2}
 				text1='here is some text about me company'

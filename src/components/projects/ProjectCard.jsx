@@ -19,36 +19,48 @@ const useStyles = makeStyles({
 	root: {
 		maxWidth: 345,
         margin:'1rem',
+		transition: "all .3s ease-in",
+		"&:hover": {
+			// background: green[200],
+			background: green[500],
+			color: "white",
+		},
+		
+	},
+	button: {
+		display: "inline-block",
+		margin: "50px",
+		transform: "scale(0.8)",
 	},
 })
 
-const ProjectCard = () => {
+
+const ProjectCard = ({title, bodyText, imgAlt, img}) => {
 	const classes = useStyles()
 	return (
 		<Card className={classes.root}>
 			<CardActionArea>
 				<CardMedia
 					component='img'
-					alt='Contempltile'
+					alt={imgAlt}
 					height='280'
-					image='/TheShopiesTerminator.png'
-					title='Contemplative Reptile'
+					image={img}
+					title={imgAlt}
 				/>
 				<CardContent>
 					<Typography gutterBottom variant='h5' component='h2'>
-						Lizard
+						{title}
 					</Typography>
 					<Typography variant='body2' color='textSecondary' component='p'>
-						Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica
+						{bodyText}
 					</Typography>
 				</CardContent>
 			</CardActionArea>
-			<CardActions>
-				<Button size='small' color='primary'>
+			<CardActions >
+				<Button variant ='contained' size='small' color='primary'>
 					Share
 				</Button>
-				<Button size='small' color='primary'>
+				<Button size='small' color='secondary'>
 					Learn More
 				</Button>
 			</CardActions>

@@ -5,7 +5,7 @@ import React from "react"
 import LazyHero from "react-lazy-hero"
 // http://react-lazy-hero.danielstefanovic.com/
 
-const Hero = ({ heroTitle, subTitle }) => {
+const Hero = ({ heroTitle,heroTitleWord, subTitle, subTitleWord }) => {
 	return (
 		<LazyHero
 			// imageSrc='https://unsplash.it/2000/2000'
@@ -15,13 +15,13 @@ const Hero = ({ heroTitle, subTitle }) => {
 			parallaxOffset={Number(0.4)}>
 				
 			<Typography variant='h2' color={"secondary"} component='h1'>
-				<Box fontWeight='fontWeightMedium' component='span' color='white'>Tavares{" "}</Box>
+				<Box fontWeight='fontWeightMedium' component='span' color='white'>{heroTitleWord}{" "}</Box>
 				<Box component='span' color=''>{heroTitle}</Box>
 			</Typography>
 
 			<Typography color={"secondary"} variant='h4'>
 				<Box component='span' color=''>{subTitle}{" "}</Box>
-				<Box fontWeight='fontWeightMedium' component='span' color='white'>online presence</Box>
+				<Box fontWeight='fontWeightMedium' component='span' color='white'>{subTitleWord}</Box>
 			</Typography>
 		</LazyHero>
 	)

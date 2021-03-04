@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@material-ui/core"
+import { Box, Container, Grid, Typography } from "@material-ui/core"
 import React from "react"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
@@ -12,28 +12,73 @@ const responsive = {
 
 const items = [
 	<Grid container justify='center' className='item' data-value='1'>
-		<ProjectCard />
+		<ProjectCard
+			img='/eCommerce.png'
+			imgAlt='project'
+			title='title'
+			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+						species, ranging across all continents except Antarctica'
+		/>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='2'>
-		<ProjectCard />
+		<ProjectCard
+			img='/TheGrowBoxProjectSM.png'
+			imgAlt='project'
+			title='title'
+			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+						species, ranging across all continents except Antarctica'
+		/>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='3'>
-		<ProjectCard />
+	<ProjectCard
+			img='/TheShoppies.png'
+			imgAlt='project'
+			title='title'
+			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+						species, ranging across all continents except Antarctica'
+		/>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='4'>
-		<ProjectCard />
+	<ProjectCard
+			img='/TheShoppies.png'
+			imgAlt='project'
+			title='title'
+			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+						species, ranging across all continents except Antarctica'
+		/>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='5'>
-		<ProjectCard />
+	<ProjectCard
+			img='/TheShopiesTerminator.png'
+			imgAlt='project'
+			title='title'
+			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+						species, ranging across all continents except Antarctica'
+		/>
 	</Grid>,
-
 ]
 
 const ProjectCarousel = () => {
 	return (
-		<Container className='sec'>
-			<AliceCarousel mouseTracking items={items} responsive={responsive} />
-		</Container>
+		<Box className='sec'>
+			<Grid item xs={12} align='start'>
+				<Box m={3}>
+					<Typography variant={"h3"}>
+						<Box fontWeight=''>What we have done</Box>
+					</Typography>
+					<Typography gutterBottom variant={"h5"}>
+						Solutions made for our Partners
+					</Typography>
+				</Box>
+			</Grid>
+			<AliceCarousel
+				mouseTrackingEnabled={true}
+				disableButtonsControls
+				mouseTracking
+				items={items}
+				responsive={responsive}
+			/>
+		</Box>
 	)
 }
 

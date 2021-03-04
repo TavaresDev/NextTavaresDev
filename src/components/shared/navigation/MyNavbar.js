@@ -52,11 +52,11 @@ const MyNavbar = () => {
 			}
 			// leftLinks={
 			// 	<Grid container>
-			// 		<Grid Item xs={12} md={1} className=''>
+			// 		<Grid item xs={12} md={1} className=''>
 			// 			<NavbarLink name={"About"} />
 			// 		</Grid>
 
-			// 		<Grid Item xs={12} md={1} alignContent='center' className=''>
+			// 		<Grid item xs={12} md={1} alignContent='center' className=''>
 			// 			<NavbarLink name={"Contact"} />
 			// 		</Grid>
 			// 	</Grid>

@@ -66,8 +66,8 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 		)
 	} else {
 		return (
-			<Paper >
-				<Container id='about'>
+			<Box bgcolor="secondary.main" color="secondary.contrastText"  >
+				<Container className>
 					<Grid container className='sec'>
 						<Grid item container xm={order - 2} xm={12} sm={12} md={6}>
 							<Box m='auto' className=''>
@@ -110,7 +110,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 						</Grid>
 					</Grid>
 				</Container>
-			</Paper>
+			</Box>
 		)
 	}
 }

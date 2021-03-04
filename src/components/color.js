@@ -9,7 +9,7 @@ export default function color() {
   return (
       <Grid container >
           
-          <Grid Item md={6}> 
+          <Grid item md={6}> 
           <Typography component="div" variant="body1">
 <Box color="primary.main">primary.main</Box>
 <Box color="secondary.main">secondary.main</Box>

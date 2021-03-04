@@ -9,9 +9,11 @@ import { blue, green, grey } from "@material-ui/core/colors"
 
 const useStyles = makeStyles({
 	root: {
+		position: 'relative',
 		minWidth: 300,
 		maxWidth: 320,
-		minHeight:320,
+		minHeight: 320,
+		margin: "1rem",
 		background: "palette.primary.main",
 		transition: "all .3s ease-in",
 		"&:hover": {
@@ -19,56 +21,63 @@ const useStyles = makeStyles({
 			background: green[500],
 			color: "white",
 		},
-		bullet: {
-			display: "inline-block",
-			margin: "0 50px",
-			transform: "scale(0.8)",
-		},
-		title: {
-			fontSize: 14,
-		},
-		pos: {
-			marginBottom: 34,
-		},
+	},
+	title: {
+		fontSize: 34,
+		color:  "primary.main",
+	},
+	posBottom: {
+		position: 'absolute',
+		bottom: "0px",
+		left: "0px",
+		right: "0px",
+
+		// marginBottom: 34,
 	},
 })
 
-export default function SimpleCard({ title, adjective, text, icon }) {
+export default function SimpleCard({ title, adjective, text, text2, icon }) {
 	const classes = useStyles()
 	const bull = <span className={classes.bullet}>•</span>
 
 	return (
-		<Card className={classes.root} elevation={3}>
+		<Card className={classes.root}>
 			<CardContent>
-				<Grid item container align='start'>
+				{/* <Grid item container align='start'>
 					<Grid item>
 						<Box ml={4}>{icon}</Box>
 					</Grid>
-				</Grid>
-				<Typography variant='h5' component='h3' gutterBottom>
+				</Grid> */}
+				<Typography className={classes.title} gutterBottom variant='h4' component='h3'color="secondary.main" >
 					{title}
 				</Typography>
-				
-				<Typography className={classes.pos} color='textSecondary'>
+
+				<Typography  color='textSecondary'>
 					{adjective}
 				</Typography>
-				<Container>
-					<Box m={1}>
-						<Typography variant='body2' component='p'>
+
+				<Box>
+					<Box py={1}>
+						<Typography variant='h6' component='p'>
 							{text}
 						</Typography>
 					</Box>
 
-					<Box p={1}>
-						<Typography variant='body2' component='p'>
-							{text}
+					<Box >
+						<Typography variant='h6' component='p'>
+							{text2}
 						</Typography>
 					</Box>
-				</Container>
+				</Box>
 			</CardContent>
-			{/* <Box m={2}>
-				<Button size='small'>Learn More</Button>
-			</Box> */}
+			<CardActions className={classes.posBottom}>
+				<Button  variant='contained' size='small' color='secondary'>
+					Share
+				</Button>
+				<Button size='small' color='secondary'>
+					Learn More
+				</Button>
+			</CardActions>
 		</Card>
 	)
 }
