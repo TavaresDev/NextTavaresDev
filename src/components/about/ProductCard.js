@@ -10,7 +10,8 @@ import { blue, green, grey } from "@material-ui/core/colors"
 const useStyles = makeStyles({
 	root: {
 		minWidth: 300,
-		maxWidth: 420,
+		maxWidth: 320,
+		minHeight:320,
 		background: "palette.primary.main",
 		transition: "all .3s ease-in",
 		"&:hover": {
