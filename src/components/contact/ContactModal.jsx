@@ -11,8 +11,8 @@ const ContactModal = ({closeModal}) => {
 			<div className={styles.container}>
                 {/* <header>Th</header> */}
 
-                <strong>Message sent</strong>
-                <p>We will be in touch</p>
+                <strong>Thank you</strong>
+                <p>We will be in touch soon</p>
 
                 <button type="button" onClick={closeModal}> 
                     <img src="/icons/close.svg" alt="Fechar Modal"/>

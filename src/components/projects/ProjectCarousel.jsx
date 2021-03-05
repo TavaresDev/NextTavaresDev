@@ -73,7 +73,8 @@ const ProjectCarousel = () => {
 			</Grid>
 			<AliceCarousel
 				mouseTrackingEnabled={true}
-				disableButtonsControls
+				// disableButtonsControls
+				disableDotsControls
 				mouseTracking
 				items={items}
 				responsive={responsive}

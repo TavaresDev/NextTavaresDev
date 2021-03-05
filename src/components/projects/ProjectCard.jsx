@@ -47,6 +47,7 @@ const ProjectCard = ({title, bodyText, imgAlt, img}) => {
 					image={img}
 					title={imgAlt}
 				/>
+			</CardActionArea>
 				<CardContent>
 					<Typography gutterBottom variant='h5' component='h2'>
 						{title}
@@ -55,7 +56,6 @@ const ProjectCard = ({title, bodyText, imgAlt, img}) => {
 						{bodyText}
 					</Typography>
 				</CardContent>
-			</CardActionArea>
 			<CardActions >
 				<Button variant ='contained' size='small' color='primary'>
 					Share

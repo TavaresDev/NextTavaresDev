@@ -23,8 +23,8 @@ const useStyles = makeStyles({
 		},
 	},
 	title: {
-		fontSize: 34,
-		color:  "primary.main",
+		fontSize: 28,
+		// color:  "primary.main",
 	},
 	posBottom: {
 		position: 'absolute',
@@ -48,7 +48,7 @@ export default function SimpleCard({ title, adjective, text, text2, icon }) {
 						<Box ml={4}>{icon}</Box>
 					</Grid>
 				</Grid> */}
-				<Typography className={classes.title} gutterBottom variant='h4' component='h3'color="secondary.main" >
+				<Typography className={classes.title} gutterBottom  fontWeight='100' variant='subtitle1' component='h3'>
 					{title}
 				</Typography>
 

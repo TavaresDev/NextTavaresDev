@@ -35,7 +35,7 @@ const MyNavbar = () => {
 						<Button
 							href='#about'
 							className={classes.navLink}
-							onClick={(e) => e.preventDefault()}>
+							>
 							About Us
 						</Button>
 					</ListItem>

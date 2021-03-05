@@ -51,15 +51,15 @@ const AboutServicesCarousel = () => {
 	]
 
 	return (
-		<Container className='sec'>
+		<Container id='services'  className='sec'>
 			<Grid container>
 				<Grid item xs={12} align='start'>
 					<Box mb={3}>
 						<Typography variant={"h3"}>
-							<Box fontWeight=''>What we </Box>
+							<Box fontWeight='100'>What we do</Box>
 						</Typography>
-						<Typography gutterBottom variant={"h5"}>
-							Simple solutions for your company
+						<Typography gutterBottom variant={"subtitle1"} color='secondary' fontWeight='100'>
+							Web solutions for your company
 						</Typography>
 					</Box>
 				</Grid>
