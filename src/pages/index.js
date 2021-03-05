@@ -15,18 +15,18 @@ export default function Index() {
 
 	return (
 		<>
-			<Hero
+			{/* <Hero
 				heroTitle={"web solutions"}
 				heroTitleWord={"Tavares"}
 				subTitle={"We expand your reach, while you do what "}
 				subTitleWord={"you Love "}
-			/>
+			/> */}
 			{/* <ComplexGrid />
 
 			<Color /> */}
 
 			{/* <AboutServices /> */}
-			<AboutServicesCarousel/>
+			{/* <AboutServicesCarousel/> */}
 			<AboutInfo
 				order={2}
 				text1='here is some text about me company'

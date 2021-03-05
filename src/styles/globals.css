@@ -1,7 +1,8 @@
 :root {
   --blue: #6495ed;
   --white: #faf0e6;
-  --green: green;
+  --green: #2e7d32;
+  --darkGreen: rgb(32, 87, 35);
 }
 
 .box {

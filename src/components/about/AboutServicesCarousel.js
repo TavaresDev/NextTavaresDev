@@ -6,7 +6,6 @@ import "react-alice-carousel/lib/alice-carousel.css"
 import ProjectCard from "../projects/ProjectCard"
 import SimpleCard from "./ProductCard"
 
-
 const AboutServicesCarousel = () => {
 	const responsive = {
 		0: { items: 1 },
@@ -51,15 +50,15 @@ const AboutServicesCarousel = () => {
 	]
 
 	return (
-		<Container id='services'  className='sec'>
+		<Container id='services' className='sec'>
 			<Grid container>
 				<Grid item xs={12} align='start'>
 					<Box mb={3}>
 						<Typography variant={"h3"}>
 							<Box fontWeight='100'>What we do</Box>
 						</Typography>
-						<Typography gutterBottom variant={"subtitle1"} color='secondary' fontWeight='100'>
-							Web solutions for your company
+						<Typography gutterBottom variant={"h6"} color='secondary'>
+							<Box fontWeight='200'>Web solutions for your company</Box>
 						</Typography>
 					</Box>
 				</Grid>

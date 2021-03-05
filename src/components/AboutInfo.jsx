@@ -4,19 +4,14 @@ import { Box, Container, Grid, Paper, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import { blue } from "@material-ui/core/colors"
 
-const useStyles = makeStyles((theme) => ({
-	section: {
-		background: "blue",
-	},
-	
-}))
+
 
 const AboutInfo = ({ text1, text2, order, bg }) => {
-	const c = useStyles()
+
 
 	if (order == 2) {
 		return (
-			<Container id='about' className=''>
+			<Container id='about' >
 				<Grid
 					container
 					classes={{ root: "MuiGrid-wrap-xs-wrap-reverse" }}
@@ -31,7 +26,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 						direction='column'
 						justify='space-evenly'
 						alignItems='flex-start'
-						className=''>
+				>
 						<Box py={2}>
 							<Typography variant='h5' component='h2'>
 								{text1}
@@ -52,7 +47,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 						</Box>
 					</Grid>
 					<Grid item container xm={12} sm={12} md={6}>
-						<Box m='auto' className=''>
+						<Box m='auto' >
 							<Image
 								src='/designerColor.svg'
 								alt='Picture of the author'
@@ -67,7 +62,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 	} else {
 		return (
 			<Box bgcolor="secondary.main" color="secondary.contrastText"  >
-				<Container className>
+				<Container >
 					<Grid container className='sec'>
 						<Grid item container xm={order - 2} xm={12} sm={12} md={6}>
 							<Box m='auto' className=''>

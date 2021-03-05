@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@material-ui/core"
+import { Box, Grid, Typography } from "@material-ui/core"
 import React from "react"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
@@ -30,7 +30,7 @@ const items = [
 		/>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='3'>
-	<ProjectCard
+		<ProjectCard
 			img='/TheShoppies.png'
 			imgAlt='project'
 			title='title'
@@ -39,7 +39,7 @@ const items = [
 		/>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='4'>
-	<ProjectCard
+		<ProjectCard
 			img='/TheShoppies.png'
 			imgAlt='project'
 			title='title'
@@ -48,7 +48,7 @@ const items = [
 		/>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='5'>
-	<ProjectCard
+		<ProjectCard
 			img='/TheShopiesTerminator.png'
 			imgAlt='project'
 			title='title'
@@ -64,10 +64,10 @@ const ProjectCarousel = () => {
 			<Grid item xs={12} align='start'>
 				<Box m={3}>
 					<Typography variant={"h3"}>
-						<Box fontWeight=''>What we have done</Box>
+						<Box fontWeight='100'>What we have done</Box>
 					</Typography>
-					<Typography gutterBottom variant={"h5"}>
-						Solutions made for our Partners
+					<Typography gutterBottom variant={"h6"} color='secondary'>
+						<Box fontWeight='200'>Solutions made for our Partners</Box>
 					</Typography>
 				</Box>
 			</Grid>

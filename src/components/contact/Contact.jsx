@@ -54,10 +54,11 @@ const Contact = () => {
 						</Typography>
 					</Box>
 
-					<TextField id='' label='Name' name='client_name' />
+					<TextField id='' label='Name' name='client_name' required/>
 
-					<TextField id='standard-basic' label='Email' name='client_email' />
+					<TextField id='standard-basic' label='Email' name='client_email' required />
 					<TextField
+						required
 						id='standard-multiline-flexible'
 						label='Message'
 						multiline
