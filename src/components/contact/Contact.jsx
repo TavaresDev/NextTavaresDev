@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Container, Grid, Box, Button, Typography } from "@material-ui/core"
 import TextField from "@material-ui/core/TextField"
 import emailjs from "emailjs-com"
-import ContactModal from "./contactModal"
+import ContactModal from "./ContactModal"
 
 const Contact = () => {
 	const [isContactModalOpen, setIsContactModalOpen] = useState(false)
