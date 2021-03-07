@@ -17,6 +17,7 @@ export default function Index() {
 			/>
 
 			<AboutServicesCarousel />
+			
 			<AboutInfo
 				order={2}
 				text1='here is some text about me company'

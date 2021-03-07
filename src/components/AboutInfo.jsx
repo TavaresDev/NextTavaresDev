@@ -4,6 +4,8 @@ import { Box, Container, Grid, Paper, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import { blue } from "@material-ui/core/colors"
 
+import Fade from "react-reveal/Fade"
+
 
 
 const AboutInfo = ({ text1, text2, order, bg }) => {
@@ -11,11 +13,14 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 
 	if (order == 2) {
 		return (
+
+
 			<Container id='about' >
 				<Grid
 					container
 					classes={{ root: "MuiGrid-wrap-xs-wrap-reverse" }}
 					className='sec'>
+									
 					<Grid
 						item
 						order={2}
@@ -26,7 +31,8 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 						direction='column'
 						justify='space-evenly'
 						alignItems='flex-start'
-				>
+						>
+							<Fade left>
 						<Box py={2}>
 							<Typography variant='h5' component='h2'>
 								{text1}
@@ -45,19 +51,24 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 								voluptatem.
 							</Typography>
 						</Box>
+					</Fade>
 					</Grid>
 					<Grid item container xm={12} sm={12} md={6}>
+
 						<Box m='auto' >
+						<Fade right>
 							<Image
 								src='/designerColor.svg'
 								alt='Picture of the author'
 								// layout='responsive'
 								width={400}
 								height={400}></Image>
+		</Fade>
 						</Box>
 					</Grid>
 				</Grid>
 			</Container>
+
 		)
 	} else {
 		return (
