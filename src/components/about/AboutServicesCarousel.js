@@ -10,6 +10,7 @@ import SimpleCard from "./ProductCard"
 
 import Rotate from "react-reveal/Rotate"
 import Fade from "react-reveal/Fade"
+import Zoom from "react-reveal/Zoom"
 
 const AboutServicesCarousel = () => {
 	const responsive = {
@@ -20,46 +21,43 @@ const AboutServicesCarousel = () => {
 
 	const items = [
 		<Grid container justify='center' className='item' data-value='1'>
-			<Rotate bottom right>
-				
-			<SimpleCard
-				// icon={<WebIcon fontSize="large" />}
-				title={"Landing Page"}
-				adjective={"Fast, Reliable, SEO focused"}
-				text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
-				text2={
-					" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
-				}
+			<Fade left >
+				<SimpleCard
+					// icon={<WebIcon fontSize="large" />}
+					title={"Landing Page"}
+					adjective={"Fast, Reliable, SEO focused"}
+					text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
+					text2={
+						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
+					}
 				/>
-				</Rotate>
+			</Fade>
 		</Grid>,
 		<Grid container justify='center' className='item' data-value='2'>
 			<Fade bottom>
-			<SimpleCard
-				
-				// icon={<WebIcon fontSize="large" />}
-				title={"Web Site"}
-				adjective={"Online Home for Your bussines"}
-				text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
-				text2={
-					" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
-				}
+				<SimpleCard
+					// icon={<WebIcon fontSize="large" />}
+					title={"Web Site"}
+					adjective={"Online Home for Your bussines"}
+					text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
+					text2={
+						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
+					}
 				/>
-				</Fade>
+			</Fade>
 		</Grid>,
 		<Grid container justify='center' className='item' data-value='3'>
-			<Rotate bottom left>
-
-			<SimpleCard
-				// icon={<WebIcon fontSize="large" />}
-				title={"eCommerce "}
-				adjective={"Fast, Reliable, SEO focused"}
-				text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
-				text2={
-					" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
-				}
+			<Fade  right>
+				<SimpleCard
+					// icon={<WebIcon fontSize="large" />}
+					title={"eCommerce "}
+					adjective={"Fast, Reliable, SEO focused"}
+					text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
+					text2={
+						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
+					}
 				/>
-				</Rotate>
+			</Fade>
 		</Grid>,
 	]
 
@@ -68,29 +66,25 @@ const AboutServicesCarousel = () => {
 			<Grid container>
 				<Grid item xs={12} align='start'>
 					<Fade bottom cascade>
-
-					<Box mb={3}>
-						<Typography variant={"h3"}>
-							<Box fontWeight='100'>What we do</Box>
-						</Typography>
-						<Typography gutterBottom variant={"h6"} color='secondary'>
-							<Box fontWeight='200'>Web solutions for your company</Box>
-						</Typography>
-					</Box>
+						<Box mb={3}>
+							<Typography variant={"h3"}>
+								<Box fontWeight='100'>What we do</Box>
+							</Typography>
+							<Typography gutterBottom variant={"h6"} color='secondary'>
+								<Box fontWeight='200'>Web solutions for your company</Box>
+							</Typography>
+						</Box>
 					</Fade>
 				</Grid>
 
 				<Grid item container spacing={4}>
-
-	
-							<AliceCarousel
-								mouseTrackingEnabled={true}
-								disableButtonsControls
-								mouseTracking
-								items={items}
-								responsive={responsive}
-							/>
-
+					<AliceCarousel
+						mouseTrackingEnabled={true}
+						disableButtonsControls
+						mouseTracking
+						items={items}
+						responsive={responsive}
+					/>
 				</Grid>
 			</Grid>
 		</Container>

@@ -4,13 +4,15 @@ import TextField from "@material-ui/core/TextField"
 import emailjs from "emailjs-com"
 import ContactModal from "./ContactModal"
 
+import Fade from "react-reveal/Fade"
+
 const Contact = () => {
 	const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
 	const closeModal = () => {
 		setIsContactModalOpen(false)
 		console.log("close")
-		document.getElementById("contactForm").reset();
+		document.getElementById("contactForm").reset()
 	}
 	const sendEmail = (e) => {
 		e.preventDefault()
@@ -34,47 +36,54 @@ const Contact = () => {
 	}
 
 	return (
-		<Container id='contact' className="sec">
-			<Grid container>
-				<Grid item xm={0} sm={3} />
-				<Grid
-					item
-					container
-					sm={12}
-					md={6}
-					direction='column'
-					justify='center'
-					alignItems='stretch'
-					id = 'contactForm'
-					component='form'
-					onSubmit={sendEmail}>
-					<Box mb={5}>
-						<Typography variant='h4' component='h2'>
-							Get in touch
-						</Typography>
-					</Box>
+		<Container id='contact' className='sec'>
+			<Fade bottom cascade>
+				<Grid container>
+					<Grid item xm={0} sm={3} />
+					<Grid
+						item
+						container
+						sm={12}
+						md={6}
+						direction='column'
+						justify='center'
+						alignItems='stretch'
+						id='contactForm'
+						component='form'
+						onSubmit={sendEmail}>
+						<Box mb={5}>
+							<Typography variant='h4' component='h2'>
+								Get in touch
+							</Typography>
+						</Box>
 
-					<TextField id='' label='Name' name='client_name' required/>
+						<TextField id='' label='Name' name='client_name' required />
 
-					<TextField id='standard-basic' label='Email' name='client_email' required />
-					<TextField
-						required
-						id='standard-multiline-flexible'
-						label='Message'
-						multiline
-						rows={3}
-						rowsMax={10}
-						name='client_message'
-					/>
-					<Box ml='auto' pt={2}>
-						<Button type='submit' variant='contained' color='secondary'>
-							Send
-						</Button>
-					</Box>
+						<TextField
+							id='standard-basic'
+							label='Email'
+							name='client_email'
+							required
+						/>
+						<TextField
+							required
+							id='standard-multiline-flexible'
+							label='Message'
+							multiline
+							rows={3}
+							rowsMax={10}
+							name='client_message'
+						/>
+						<Box ml='auto' pt={2}>
+							<Button type='submit' variant='contained' color='secondary'>
+								Send
+							</Button>
+						</Box>
+					</Grid>
+
+					<Grid item xm={0} sm={3} />
 				</Grid>
-
-				<Grid item xm={0} sm={3} />
-			</Grid>
+			</Fade>
 			{isContactModalOpen && <ContactModal closeModal={closeModal} />}
 		</Container>
 	)

@@ -1,8 +1,10 @@
-import { Box, Grid, Typography } from "@material-ui/core"
+import { Box, Grid, Typography, Container } from "@material-ui/core"
 import React from "react"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import ProjectCard from "./ProjectCard"
+
+import Fade from "react-reveal/Fade"
 
 const responsive = {
 	0: { items: 1 },
@@ -12,64 +14,76 @@ const responsive = {
 
 const items = [
 	<Grid container justify='center' className='item' data-value='1'>
-		<ProjectCard
-			img='/eCommerce.png'
-			imgAlt='project'
-			title='title'
-			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica'
-		/>
+		<Fade bottom>
+			<ProjectCard
+				img='/eCommerce.png'
+				imgAlt='project'
+				title='title'
+				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+			species, ranging across all continents except Antarctica'
+			/>
+		</Fade>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='2'>
-		<ProjectCard
-			img='/TheGrowBoxProjectSM.png'
-			imgAlt='project'
-			title='title'
-			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica'
-		/>
+		<Fade bottom>
+			<ProjectCard
+				img='/TheGrowBoxProjectSM.png'
+				imgAlt='project'
+				title='title'
+				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+			species, ranging across all continents except Antarctica'
+			/>
+		</Fade>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='3'>
-		<ProjectCard
-			img='/TheShoppies.png'
-			imgAlt='project'
-			title='title'
-			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica'
-		/>
+		<Fade bottom>
+			<ProjectCard
+				img='/TheShoppies.png'
+				imgAlt='project'
+				title='title'
+				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+			species, ranging across all continents except Antarctica'
+			/>
+		</Fade>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='4'>
-		<ProjectCard
-			img='/TheShoppies.png'
-			imgAlt='project'
-			title='title'
-			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica'
-		/>
+		<Fade bottom>
+			<ProjectCard
+				img='/TheShoppies.png'
+				imgAlt='project'
+				title='title'
+				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+			species, ranging across all continents except Antarctica'
+			/>
+		</Fade>
 	</Grid>,
 	<Grid container justify='center' className='item' data-value='5'>
-		<ProjectCard
-			img='/TheShopiesTerminator.png'
-			imgAlt='project'
-			title='title'
-			bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica'
-		/>
+		<Fade bottom>
+			<ProjectCard
+				img='/TheShopiesTerminator.png'
+				imgAlt='project'
+				title='title'
+				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
+			species, ranging across all continents except Antarctica'
+			/>
+		</Fade>
 	</Grid>,
 ]
 
 const ProjectCarousel = () => {
 	return (
-		<Box className='sec'>
+		<Container className='sec'>
 			<Grid item xs={12} align='start'>
-				<Box m={3}>
-					<Typography variant={"h3"}>
-						<Box fontWeight='100'>What we have done</Box>
-					</Typography>
-					<Typography gutterBottom variant={"h6"} color='secondary'>
-						<Box fontWeight='200'>Solutions made for our Partners</Box>
-					</Typography>
-				</Box>
+				<Fade>
+					<Box m={3}>
+						<Typography variant={"h3"}>
+							<Box fontWeight='100'>What we have done</Box>
+						</Typography>
+						<Typography gutterBottom variant={"h6"} color='secondary'>
+							<Box fontWeight='200'>Solutions made for our Partners</Box>
+						</Typography>
+					</Box>
+				</Fade>
 			</Grid>
 			<AliceCarousel
 				mouseTrackingEnabled={true}
@@ -79,7 +93,7 @@ const ProjectCarousel = () => {
 				items={items}
 				responsive={responsive}
 			/>
-		</Box>
+		</Container>
 	)
 }
 
