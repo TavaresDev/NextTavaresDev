@@ -71,7 +71,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 			<>
 				<Box bgcolor='secondary.main' color='secondary.contrastText'>
 					<Container>
-						<Grid container className='sc'>
+						<Grid container className='sec'>
 							<Grid item container xm={order - 2} xm={12} sm={12} md={6}>
 								<Box m='auto' className=''>
 									<Fade left>

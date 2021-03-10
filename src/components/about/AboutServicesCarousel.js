@@ -62,7 +62,7 @@ const AboutServicesCarousel = () => {
 	]
 
 	return (
-		<Container id='services' className='sec'>
+		<Container id='services' className='secB'>
 			<Grid container>
 				<Grid item xs={12} align='start'>
 					<Container>

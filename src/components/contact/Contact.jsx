@@ -39,63 +39,64 @@ const Contact = () => {
 		<Container id='contact' className='sec'>
 			<Fade bottom cascade>
 				<Grid container>
-					<Grid item xm={0} sm={3} />
+					<Grid item xm={0} sm={2} md={2} lg={3}/>
 					<Grid
 						item
 						container
 						sm={12}
-						md={6}
+						md={8}
+						lg={6}
 						direction='column'
 						justify='center'
 						alignItems='stretch'
 						id='contactForm'
 						component='form'
 						onSubmit={sendEmail}>
-							<Container>
-
-						<Box mb={5}>
-							<Typography variant='h4' component='h2'>
-								Get in touch
-							</Typography>
-						</Box>
+						<Container>
+							<Box mb={5}>
+								<Typography variant='h4' component='h2'>
+									Get in touch
+								</Typography>
+							</Box>
 						</Container>
 						<Container>
-						<Grid item
-						container direction='column'
-						justify='center'
-						alignItems='stretch'>
+							<Grid
+								item
+								container
+								direction='column'
+								justify='center'
+								alignItems='stretch'>
+								<TextField id='' label='Name' name='client_name' required />
 
-
-				
-
-						<TextField id='' label='Name' name='client_name' required />
-
-						<TextField
-							id='standard-basic'
-							label='Email'
-							name='client_email'
-							required
-							/>
-						<TextField
-							required
-							id='standard-multiline-flexible'
-							label='Message'
-							multiline
-							rows={3}
-							rowsMax={10}
-							name='client_message'
-							/>
-						<Box ml='auto' pt={2}>
-							<Button type='submit' variant='contained' color='secondary'>
-								Send
-							</Button>
-						</Box>
-						</Grid>
-							</Container>
+								<TextField
+									id='standard-basic'
+									label='Email'
+									name='client_email'
+									required
+								/>
+								<TextField
+									required
+									id='standard-multiline-flexible'
+									label='Message'
+									multiline
+									rows={3}
+									rowsMax={10}
+									name='client_message'
+								/>
+								<Box ml='auto' pt={3}>
+									<Button
+										type='submit'
+										size='small'
+										variant='contained'
+										color='secondary'>
+										Send
+									</Button>
+								</Box>
+							</Grid>
+						</Container>
 					</Grid>
 
-					<Grid item xm={0} sm={3} />
-		
+					<Grid item xm={0} sm={2} md={2} lg={3}/>
 				</Grid>
 			</Fade>
 			{isContactModalOpen && <ContactModal closeModal={closeModal} />}

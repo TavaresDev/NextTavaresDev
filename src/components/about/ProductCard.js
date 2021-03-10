@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 		padding: "1rem",
 		background: "palette.primary.main",
 		transition: "all .3s ease-in",
-		"&:hover, &:hover button": {
+		"&:hover": {
 			// background: green[200],
 			background: green[500],
 			color: "white",
@@ -51,7 +51,7 @@ const useStyles = makeStyles({
 		"&:hover": {
 			background: 'white',
 			// background: green[200],
-			// background: green[500],
+			background: green[500],
 			// color: "white",
 		},
 	}
@@ -98,12 +98,12 @@ export default function SimpleCard({ title, adjective, text, text2, icon }) {
 				</Box>
 			</CardContent>
 			<CardActions className={classes.posBottom}>
-				{/* <Button  variant='contained' size='small' color='secondary'>
-					Share
-				</Button> */}
-				<Button className={classes.button} size='small' >
+				<Button  variant='contained' size='small' color='secondary'>
 					Learn More
 				</Button>
+				{/* <Button className={classes.button} size='small' >
+					Learn More
+				</Button> */}
 			</CardActions>
 		</Card>
 	)

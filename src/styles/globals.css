@@ -9,7 +9,10 @@
   border: solid red ;
 }
 .sec {
-  padding: 5rem 0;
+  padding: 4rem 0;
+}
+.secB {
+  padding: 0 0 3rem 0;
 }
 .bgPrimary {
   background-color: var(--blue);

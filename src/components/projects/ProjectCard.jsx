@@ -19,7 +19,7 @@ import Image from "next/image"
 const useStyles = makeStyles({
 	root: {
 		maxWidth: 355,
-		mminWidth: 305,
+		minWidth: 305,
         margin:'1rem',
 		transition: "all .3s ease-in",
 		"&:hover": {
@@ -30,9 +30,13 @@ const useStyles = makeStyles({
 		
 	},
 	button: {
-		display: "inline-block",
-		margin: "50px",
-		transform: "scale(0.8)",
+		// display: "inline-block",
+		// display: "inline-block",
+		marginLeft: "auto",
+		marginRight: "0.5rem",
+		marginBottom: "0.5rem",
+		// padding: "1rem",
+		// transform: "scale(0.8)",
 	},
 })
 
@@ -68,13 +72,17 @@ const ProjectCard = ({title, bodyText, imgAlt, img}) => {
 						{bodyText}
 					</Typography>
 				</CardContent>
-			<CardActions >
-				<Button variant ='contained' size='small' color='primary'>
-					Share
+			<CardActions   >
+
+
+
+				<Button className={classes.button} variant ='contained' size='small' color='secondary'>
+					See more
 				</Button>
-				<Button size='small' color='secondary'>
+				{/* <Button size='small' color='secondary'>
 					Learn More
-				</Button>
+				</Button> */}
+
 			</CardActions>
 		</Card>
 	)
