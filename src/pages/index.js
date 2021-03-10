@@ -17,13 +17,12 @@ export default function Index() {
 			/>
 
 			<AboutServicesCarousel />
-			
+
 			<AboutInfo
 				order={2}
 				text1='here is some text about me company'
 				text2='here is some text about me company'
-			/>
-			<AboutInfo
+			/><AboutInfo
 				bg='bgPrimary'
 				text1='here is some text about me company'
 				text2='here is some text about me company'

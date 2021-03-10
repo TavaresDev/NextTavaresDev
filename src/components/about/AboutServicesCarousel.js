@@ -65,6 +65,8 @@ const AboutServicesCarousel = () => {
 		<Container id='services' className='sec'>
 			<Grid container>
 				<Grid item xs={12} align='start'>
+					<Container>
+
 					<Fade bottom cascade>
 						<Box mb={3}>
 							<Typography variant={"h3"}>
@@ -75,6 +77,7 @@ const AboutServicesCarousel = () => {
 							</Typography>
 						</Box>
 					</Fade>
+					</Container>
 				</Grid>
 
 				<Grid item container spacing={4}>

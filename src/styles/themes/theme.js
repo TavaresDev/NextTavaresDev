@@ -12,6 +12,7 @@ const theme = createMuiTheme({
     secondary: {
       light: green[200],
       main: green[800],
+      main: '#205723',
     },
     title: {
       main: '#fff'

@@ -1,0 +1,7 @@
+.root svg {
+
+    background: url('https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    display: block;
+}

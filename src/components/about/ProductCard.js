@@ -14,9 +14,10 @@ const useStyles = makeStyles({
 		maxWidth: 320,
 		minHeight: 320,
 		margin: "1rem",
+		padding: "1rem",
 		background: "palette.primary.main",
 		transition: "all .3s ease-in",
-		"&:hover": {
+		"&:hover, &:hover button": {
 			// background: green[200],
 			background: green[500],
 			color: "white",
@@ -24,16 +25,36 @@ const useStyles = makeStyles({
 	},
 	title: {
 		fontSize: 28,
+		fontWeight:500,
+		paddingTop:'0rem',
+		lineHeight: 1.2,
+		// color:  "primary.main",
+	},
+	subtitle: {
+		fontSize:14,
+		fontWeight:200,
 		// color:  "primary.main",
 	},
 	posBottom: {
 		position: 'absolute',
+		padding:'0.5rem',
 		bottom: "0px",
-		left: "0px",
-		right: "0px",
-
+		// left: "px",
+		right: "1.1rem",
 		// marginBottom: 34,
+	
 	},
+	button: {
+		color:green[800],
+		padding:'0.5rem',
+		transition: "all .3s ease-in",
+		"&:hover": {
+			background: 'white',
+			// background: green[200],
+			// background: green[500],
+			// color: "white",
+		},
+	}
 })
 
 export default function SimpleCard({ title, adjective, text, text2, icon }) {
@@ -48,33 +69,39 @@ export default function SimpleCard({ title, adjective, text, text2, icon }) {
 						<Box ml={4}>{icon}</Box>
 					</Grid>
 				</Grid> */}
-				<Typography className={classes.title} gutterBottom  fontWeight='100' variant='subtitle1' component='h3'>
+				<Typography className={classes.title} component='h3'>
 					{title}
 				</Typography>
 
-				<Typography  color='textSecondary'>
+				<Typography className={classes.subtitle}  color='textSecondary'>
 					{adjective}
 				</Typography>
 
 				<Box>
-					<Box py={1}>
-						<Typography variant='h6' component='p'>
+					<Box mt={1} mb={2} >
+						<Typography align='justify' variant='body2' component='p'>
 							{text}
 						</Typography>
 					</Box>
-
-					<Box >
-						<Typography variant='h6' component='p'>
+					<Box mb={2}  >
+						<Typography align='justify' variant='body2' component='p'>
 							{text2}
 						</Typography>
 					</Box>
+					<Box   >
+						<Typography align='justify' variant='body2' component='p'>
+							{text2}
+						</Typography>
+					</Box>
+
+
 				</Box>
 			</CardContent>
 			<CardActions className={classes.posBottom}>
-				<Button  variant='contained' size='small' color='secondary'>
+				{/* <Button  variant='contained' size='small' color='secondary'>
 					Share
-				</Button>
-				<Button size='small' color='secondary'>
+				</Button> */}
+				<Button className={classes.button} size='small' >
 					Learn More
 				</Button>
 			</CardActions>

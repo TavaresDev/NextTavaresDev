@@ -14,10 +14,12 @@ import CardContent from "@material-ui/core/CardContent"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 import { blue, green, grey } from "@material-ui/core/colors"
+import Image from "next/image"
 
 const useStyles = makeStyles({
 	root: {
-		maxWidth: 345,
+		maxWidth: 355,
+		mminWidth: 305,
         margin:'1rem',
 		transition: "all .3s ease-in",
 		"&:hover": {
@@ -43,10 +45,20 @@ const ProjectCard = ({title, bodyText, imgAlt, img}) => {
 				<CardMedia
 					component='img'
 					alt={imgAlt}
-					height='280'
+					height='380'
+					// width='380'
 					image={img}
 					title={imgAlt}
 				/>
+				{/* <Image
+		src={img}
+		
+					alt={imgAlt}
+					height='380'
+					width='380'
+							layout='responsive'
+					title={imgAlt}
+				/> */}
 			</CardActionArea>
 				<CardContent>
 					<Typography gutterBottom variant='h5' component='h2'>

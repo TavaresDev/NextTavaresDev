@@ -51,11 +51,22 @@ const Contact = () => {
 						id='contactForm'
 						component='form'
 						onSubmit={sendEmail}>
+							<Container>
+
 						<Box mb={5}>
 							<Typography variant='h4' component='h2'>
 								Get in touch
 							</Typography>
 						</Box>
+						</Container>
+						<Container>
+						<Grid item
+						container direction='column'
+						justify='center'
+						alignItems='stretch'>
+
+
+				
 
 						<TextField id='' label='Name' name='client_name' required />
 
@@ -64,7 +75,7 @@ const Contact = () => {
 							label='Email'
 							name='client_email'
 							required
-						/>
+							/>
 						<TextField
 							required
 							id='standard-multiline-flexible'
@@ -73,15 +84,18 @@ const Contact = () => {
 							rows={3}
 							rowsMax={10}
 							name='client_message'
-						/>
+							/>
 						<Box ml='auto' pt={2}>
 							<Button type='submit' variant='contained' color='secondary'>
 								Send
 							</Button>
 						</Box>
+						</Grid>
+							</Container>
 					</Grid>
 
 					<Grid item xm={0} sm={3} />
+		
 				</Grid>
 			</Fade>
 			{isContactModalOpen && <ContactModal closeModal={closeModal} />}

@@ -5,14 +5,20 @@ import { Grid, List, ListItem, Button } from "@material-ui/core"
 
 import { makeStyles } from "@material-ui/core/styles"
 import styles from "./navbarsStyle.js"
+import Image from "next/image"
 
 const useStyles = makeStyles(styles)
 const MyNavbar = () => {
 	const classes = useStyles()
 
+	const logo = ``
+
 	return (
 		<Header
-			brand='T'
+			brand={<Image
+				src='/tLogo.png'
+				width={40}
+				height={40}></Image>}
 			color='transparent'
 			// rightLinks={<HeaderLinks />}
 			fixed

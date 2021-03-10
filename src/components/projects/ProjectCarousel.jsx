@@ -16,7 +16,7 @@ const items = [
 	<Grid container justify='center' className='item' data-value='1'>
 		<Fade bottom>
 			<ProjectCard
-				img='/eCommerce.png'
+				img='/mernCenter.svg'
 				imgAlt='project'
 				title='title'
 				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -27,7 +27,7 @@ const items = [
 	<Grid container justify='center' className='item' data-value='2'>
 		<Fade bottom>
 			<ProjectCard
-				img='/TheGrowBoxProjectSM.png'
+				img='/eCommerce.png'
 				imgAlt='project'
 				title='title'
 				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -74,16 +74,19 @@ const ProjectCarousel = () => {
 	return (
 		<Container className='sec'>
 			<Grid item xs={12} align='start'>
+				<Container>
+
 				<Fade>
 					<Box m={3}>
 						<Typography variant={"h3"}>
-							<Box fontWeight='100'>What we have done</Box>
+							<Box fontWeight='100'>Projects</Box>
 						</Typography>
 						<Typography gutterBottom variant={"h6"} color='secondary'>
 							<Box fontWeight='200'>Solutions made for our Partners</Box>
 						</Typography>
 					</Box>
 				</Fade>
+				</Container>
 			</Grid>
 			<AliceCarousel
 				mouseTrackingEnabled={true}
