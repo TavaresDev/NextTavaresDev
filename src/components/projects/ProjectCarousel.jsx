@@ -27,7 +27,7 @@ const items = [
 	<Grid container justify='center' className='item' data-value='2'>
 		<Fade bottom>
 			<ProjectCard
-				img='/eCommerce.png'
+				img='/TheGrowBoxProjectSM.png'
 				imgAlt='project'
 				title='title'
 				bodyText='Lizards are a widespread group of squamate reptiles, with over 6,000
