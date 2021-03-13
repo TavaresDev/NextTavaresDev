@@ -10,12 +10,6 @@ import MyHero from "../components/hero/MyHero"
 export default function Index() {
 	return (
 		<>
-			{/* <Hero
-				heroTitle={"web solutions"}
-				heroTitleWord={"Tavares"}
-				subTitle={"We expand your reach, while you do what "}
-				subTitleWord={"you Love "}
-			/> */}
 			
 			<MyHero
 				heroTitle={"web solutions"}
