@@ -20,8 +20,9 @@ const AboutServicesCarousel = () => {
 	}
 
 	const items = [
+		
 		<Grid container justify='center' className='item' data-value='1'>
-			<Fade left >
+			{/* <Fade left > */}
 				<SimpleCard
 					// icon={<WebIcon fontSize="large" />}
 					title={"Landing Page"}
@@ -31,10 +32,10 @@ const AboutServicesCarousel = () => {
 						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
 					}
 				/>
-			</Fade>
+			{/* </Fade> */}
 		</Grid>,
 		<Grid container justify='center' className='item' data-value='2'>
-			<Fade bottom>
+			{/* <Fade bottom> */}
 				<SimpleCard
 					// icon={<WebIcon fontSize="large" />}
 					title={"Web Site"}
@@ -44,10 +45,10 @@ const AboutServicesCarousel = () => {
 						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
 					}
 				/>
-			</Fade>
+			{/* </Fade> */}
 		</Grid>,
 		<Grid container justify='center' className='item' data-value='3'>
-			<Fade  right>
+			{/* <Fade  right> */}
 				<SimpleCard
 					// icon={<WebIcon fontSize="large" />}
 					title={"eCommerce "}
@@ -57,7 +58,7 @@ const AboutServicesCarousel = () => {
 						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
 					}
 				/>
-			</Fade>
+			{/* </Fade> */}
 		</Grid>,
 	]
 
@@ -81,13 +82,16 @@ const AboutServicesCarousel = () => {
 				</Grid>
 
 				<Grid item container spacing={4}>
+					{/* <Fade> */}
+
 					<AliceCarousel
 						mouseTrackingEnabled={true}
 						disableButtonsControls
 						mouseTracking
 						items={items}
 						responsive={responsive}
-					/>
+						/>
+						{/* </Fade> */}
 				</Grid>
 			</Grid>
 		</Container>
