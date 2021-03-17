@@ -69,7 +69,7 @@ const useStyles = makeStyles({
 })
 
 
-const ProjectCard = ({title, bodyText, imgAlt, img}) => {
+const ProjectCard = ({title, bodyText, imgAlt, img, link}) => {
 	const classes = useStyles()
 	return (
 		<Card className={classes.root}>
@@ -101,10 +101,11 @@ const ProjectCard = ({title, bodyText, imgAlt, img}) => {
 					</Typography>
 				</CardContent>
 			<CardActions className={classes.posBottom}  >
-
+				<a href={link} target="_blank" style={{textDecoration:'none'}}>
 				<Button className={classes.button} variant ='contained' color='primary' size='small'>
 					See more
 				</Button>
+				</a>
 				{/* <Button size='small' color='secondary'>
 					Learn More
 				</Button> */}
