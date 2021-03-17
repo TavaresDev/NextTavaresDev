@@ -48,15 +48,19 @@ const useStyles = makeStyles({
 		// marginRight: "0.5rem",
 		// marginBottom: "0.5rem",
 		padding: "0.6rem",
-		borderRadius: "5px",
-		color:'#000',
+		// borderRadius: "5px",
+		// color:'#fff',
+		textTransform: 'capitalize',
 		
-		backgroundColor: '#C4C4C4',
+		// backgroundColor: '#C4C4C4',
+		// backgroundColor: '#686767',
 		
 		"&:hover": {
-			boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2)',
+			// boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2)',
 			// background: green[200],
-			backgroundColor: '#dfdfdf',
+
+			// backgroundColor: '#888',
+			// backgroundColor: '#4F4F4F',
 
 
 		},
@@ -98,9 +102,9 @@ const ProjectCard = ({title, bodyText, imgAlt, img}) => {
 				</CardContent>
 			<CardActions className={classes.posBottom}  >
 
-				<a className={classes.button} variant ='contained' size='small'>
+				<Button className={classes.button} variant ='contained' color='primary' size='small'>
 					See more
-				</a>
+				</Button>
 				{/* <Button size='small' color='secondary'>
 					Learn More
 				</Button> */}

@@ -39,7 +39,7 @@ const Contact = () => {
 		<Container id='contact' className='sec'>
 			<Fade bottom cascade>
 				<Grid container>
-					<Grid item xm={0} sm={2} md={2} lg={3}/>
+					<Grid item xm={0} sm={2} md={2} lg={3} />
 					<Grid
 						item
 						container
@@ -63,18 +63,21 @@ const Contact = () => {
 							<Grid
 								item
 								container
+
 								direction='column'
 								justify='center'
 								alignItems='stretch'>
-								<TextField id='' label='Name' name='client_name' required />
+								<TextField color='secondary' id='' label='Name' name='client_name' required />
 
 								<TextField
+									color='secondary'
 									id='standard-basic'
 									label='Email'
 									name='client_email'
 									required
 								/>
 								<TextField
+									color='secondary'
 									required
 									id='standard-multiline-flexible'
 									label='Message'
@@ -88,7 +91,7 @@ const Contact = () => {
 										type='submit'
 										size='small'
 										variant='contained'
-										color='secondary'>
+										color='primary'>
 										Send
 									</Button>
 								</Box>
@@ -96,7 +99,7 @@ const Contact = () => {
 						</Container>
 					</Grid>
 
-					<Grid item xm={0} sm={2} md={2} lg={3}/>
+					<Grid item xm={0} sm={2} md={2} lg={3} />
 				</Grid>
 			</Fade>
 			{isContactModalOpen && <ContactModal closeModal={closeModal} />}
