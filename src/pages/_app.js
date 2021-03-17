@@ -23,7 +23,10 @@ export default function MyApp({ Component, pageProps }) {
 	return (
 		<React.Fragment>
 			<Head>
-				<title>My page</title>
+				<title>Tavares Web Solution</title>
+				<meta name="description" content="We are a modern web development agency, using the best tech available to build solutions for your business. We create a fully functional custom solution for your business needs."></meta>
+				<link rel="canonical" href="http://tavaresweb.com/" />
+				<meta name="robots" content="index, follow"/>
 				<meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width'
 				/>
 			</Head>
