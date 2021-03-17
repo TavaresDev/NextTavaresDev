@@ -26,11 +26,10 @@ const AboutServicesCarousel = () => {
 				<SimpleCard
 					// icon={<WebIcon fontSize="large" />}
 					title={"Landing Page"}
-					adjective={"Fast, Reliable, SEO focused"}
-					text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
-					text2={
-						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
-					}
+					adjective="Get leads, convert clients"
+					text="Your business card on the internet, with the power of google analytics, great SEO, and anything else you can think of.  "
+					// text2=" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
+					
 				/>
 			{/* </Fade> */}
 		</Grid>,
@@ -39,11 +38,9 @@ const AboutServicesCarousel = () => {
 				<SimpleCard
 					// icon={<WebIcon fontSize="large" />}
 					title={"Web Site"}
-					adjective={"Online Home for Your bussines"}
-					text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
-					text2={
-						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
-					}
+					adjective="Online Home for Your business "
+					text="A virtual Home for your business. - We can tell your story in a way people will love to see, making your brand identity on the internet"
+					// text2=" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
 				/>
 			{/* </Fade> */}
 		</Grid>,
@@ -51,12 +48,11 @@ const AboutServicesCarousel = () => {
 			{/* <Fade  right> */}
 				<SimpleCard
 					// icon={<WebIcon fontSize="large" />}
-					title={"eCommerce "}
-					adjective={"Fast, Reliable, SEO focused"}
-					text={"LoLorem ipsum dolor sit amet, consectetur adipiscing elit.  "}
-					text2={
-						" Pellentesque sollicitudin ipsum commodo arcu tristique pharetra. "
-					}
+					title="eCommerce "
+					adjective="Sell your products, connect to clients."
+					text="Using modern Headless CMS, you get the performance of big e-commerce like Shopify, and the customization of a system created from scratch."
+					// text2="Display your products and your style to clients. Using modern Headless CMS, you get the performance of big e-commerce like Shopify, and the customization of a system created from scratch."
+					
 				/>
 			{/* </Fade> */}
 		</Grid>,

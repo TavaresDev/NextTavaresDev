@@ -30,20 +30,18 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 								<Fade left>
 									<Box py={2}>
 										<Typography variant='h5' component='h2'>
-											{text1}
+											We are a modern company, using the best tech available to build solutions for your business.
 										</Typography>
 									</Box>
 									<Box py={2}>
 										<Typography variant='h5' component='h2'>
-											{text2} fugiat sunt molestiae nesciunt magni, commodi ex
-											voluptatem possimus ipsa, itaque voluptatum incidunt illo
-											assumenda.
+
+											No themes, no pre-build or generic solutions. We create a fully functional custom solution for your business needs.
 										</Typography>
 									</Box>
 									<Box py={2}>
 										<Typography variant='h5' component='h2'>
-											{text2} fugiat sunt molestiae nesciunt magni, commodi ex
-											voluptatem.
+											Convert clients, show your ideas, sell your work, and build your online persona with all the freedom the internet allows.
 										</Typography>
 									</Box>
 								</Fade>
@@ -63,20 +61,20 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 						</Grid>
 					</Grid>
 				</Container>
-				<svg style={{verticalAlign: 'top', display: 'inline-block', margin:'-5px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#205723" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,192C384,160,480,96,576,106.7C672,117,768,203,864,245.3C960,288,1056,288,1152,277.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-				</>
+				<svg style={{ marginBottom: '-1rem', }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#205723" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,192C384,160,480,96,576,106.7C672,117,768,203,864,245.3C960,288,1056,288,1152,277.3C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+			</>
 		)
 	} else {
 		return (
 			<>
-				<Box bgcolor='secondary.main' color='secondary.contrastText'>
+				<Box style={{		boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2)'}} bgcolor='secondary.main' color='secondary.contrastText'>
 					<Container>
 						<Grid container className='sec'>
 							<Grid item container xm={order - 2} xm={12} sm={12} md={6}>
 								<Box m='auto' className=''>
 									<Fade left>
 										<Image
-											src='/undraw_Code_thinking_re_gka2.svg'
+											src='/undraw_mobile_development_8gyo.svg'
 											alt='Picture of the author'
 											// layout='responsive'
 											width={350}
@@ -98,20 +96,17 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 									<Fade right>
 										<Box py={2}>
 											<Typography variant='h5' component='h2'>
-												{text1}
+											More than 51% of internet traffic is on mobile, and Only 9% of Google searchers make it to the bottom of the first page
 											</Typography>
 										</Box>
 										<Box py={2}>
-											<Typography variant='h6' component='h2'>
-												{text2} fugiat sunt molestiae nesciunt magni, commodi ex
-												voluptatem possimus ipsa, itaque voluptatum incidunt
-												illo assumenda.
+											<Typography variant='h5' component='h2'>
+											Your website needs to be on top of Google research and need to be mobile friendly to be relevant
 											</Typography>
 										</Box>
 										<Box py={2}>
-											<Typography variant='h6' component='h2'>
-												{text2} fugiat sunt molestiae nesciunt magni, commodi ex
-												voluptatem.
+											<Typography variant='h5' component='h2'>
+											That what we do, using a mobile-first approach and the best Search Engine Optimization (SEO) strategies we build your site to have results
 											</Typography>
 										</Box>
 									</Fade>

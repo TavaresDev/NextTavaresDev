@@ -12,12 +12,15 @@ const useStyles = makeStyles({
 		position: 'relative',
 		minWidth: 300,
 		maxWidth: 320,
-		minHeight: 320,
+		minHeight: 260,
 		margin: "1rem",
 		padding: "1rem",
 		background: "palette.primary.main",
+		boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2)',
 		transition: "all .3s ease-in",
 		"&:hover": {
+			boxShadow: '0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2)',
+			// boxShadow: '0px 0px 0px 0px',
 			// background: green[200],
 			background: green[500],
 			color: "white",
@@ -26,7 +29,7 @@ const useStyles = makeStyles({
 	title: {
 		fontSize: 28,
 		fontWeight:500,
-		paddingTop:'0rem',
+		// padding:'0rem 0 0 3rem',
 		lineHeight: 1.2,
 		// color:  "primary.main",
 	},
@@ -35,6 +38,12 @@ const useStyles = makeStyles({
 		fontWeight:200,
 		// color:  "primary.main",
 	},
+	body: {
+		paddingTop:'1rem',
+		fontWeight:'100',
+
+		// color:'#fff',
+	},
 	posBottom: {
 		position: 'absolute',
 		padding:'0.5rem',
@@ -42,7 +51,6 @@ const useStyles = makeStyles({
 		// left: "px",
 		right: "1.1rem",
 		// marginBottom: 34,
-	
 	},
 	button: {
 		color:green[800],
@@ -77,19 +85,19 @@ export default function SimpleCard({ title, adjective, text, text2, icon }) {
 					{adjective}
 				</Typography>
 
-				<Box>
+				<Box className={classes.body} >
 					<Box mt={1} mb={2} >
-						<Typography align='justify' variant='body2' component='p'>
+						<Typography  variant='body2' component='p'>
 							{text}
 						</Typography>
 					</Box>
 					<Box mb={2}  >
-						<Typography align='justify' variant='body2' component='p'>
+						<Typography  variant='body2' component='p'>
 							{text2}
 						</Typography>
 					</Box>
 					<Box   >
-						<Typography align='justify' variant='body2' component='p'>
+						<Typography  variant='body2' component='p'>
 							{text2}
 						</Typography>
 					</Box>
@@ -97,14 +105,14 @@ export default function SimpleCard({ title, adjective, text, text2, icon }) {
 
 				</Box>
 			</CardContent>
-			<CardActions className={classes.posBottom}>
+			{/* <CardActions className={classes.posBottom}>
 				<Button  variant='contained' size='small' color='secondary'>
 					Learn More
 				</Button>
-				{/* <Button className={classes.button} size='small' >
+				<Button className={classes.button} size='small' >
 					Learn More
-				</Button> */}
-			</CardActions>
+				</Button>
+			</CardActions> */}
 		</Card>
 	)
 }

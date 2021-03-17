@@ -34,7 +34,7 @@ const MyHero = ({ heroTitle, heroTitleWord, subTitle, subTitleWord }) => {
 					</Fade>
 				</Box>
 			</Box>
-			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+			<svg className={styles.svg} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
 				<path
 					fill='#a5d6a7'
 					fill-opacity='1'
