@@ -18,6 +18,7 @@ import Image from "next/image"
 
 const useStyles = makeStyles({
 	root: {
+		position: 'relative',
 		maxWidth: 355,
 		minWidth: 305,
 		minHeight: 570,
@@ -35,16 +36,16 @@ const useStyles = makeStyles({
 	posBottom: {
 		position: 'absolute',
 		// padding:'1rem',
-		bottom: "1.5rem",
+		bottom: "1rem",
 		// left: "px",
-		right: "2rem",
+		right: "1rem",
 		// marginBottom: 34,
 	},
 	button: {
 		// display: "inline-block",
 		boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2)',
 		fontSize:'0.8rem',
-		marginLeft: "auto",
+		// marginLeft: "auto",
 		// marginRight: "0.5rem",
 		// marginBottom: "0.5rem",
 		padding: "0.6rem",
