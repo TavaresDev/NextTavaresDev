@@ -66,7 +66,7 @@ const MyNavbar = () => {
 							className={classes.navLink + " "}
 						// onClick={(e) => e.preventDefault()}
 						>
-							Services
+							{t.navLink1}
 						</Button>
 					</ListItem>
 					<ListItem className={classes.listItem}>
@@ -74,7 +74,7 @@ const MyNavbar = () => {
 							href='#about'
 							className={classes.navLink}
 						>
-							About Us
+							{t.navLink2}
 						</Button>
 					</ListItem>
 					<ListItem className={classes.listItem}>
@@ -83,7 +83,7 @@ const MyNavbar = () => {
 							className={classes.navLink}
 						// onClick={(e) => e.preventDefault()}
 						>
-							Contact
+							{t.navLink3}
 						</Button>
 					</ListItem>
 				</List>
