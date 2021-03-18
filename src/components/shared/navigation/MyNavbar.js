@@ -1,6 +1,5 @@
 import React from "react"
 import { useRouter } from 'next/router'
-
 import en from '../../../locales/en'
 import pt from '../../../locales/pt'
 import Header from "./Header"
@@ -37,9 +36,8 @@ const MyNavbar = () => {
 			rightLinks={
 				<List className={classes.list}>
 					<ListItem className={classes.listItem}>
-			
-						{/* <InputLabel id="demo-simple-select-label">Len</InputLabel> */}
 						<Select
+							className={classes.navLink}
 							labelId="demo-simple-select-label"
 							id="demo-simple-select"
 							value={locale}
@@ -47,9 +45,9 @@ const MyNavbar = () => {
 						>
 							<MenuItem value='en'>EN</MenuItem>
 							<MenuItem value='pt'>PT</MenuItem>
-					
+
 						</Select>
-			
+
 					</ListItem>
 				</List>
 			}
