@@ -31,8 +31,7 @@ export default function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			<ThemeProvider theme={theme}>
-				
-
+			
 				<Layout>
 					{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
 					<CssBaseline />
