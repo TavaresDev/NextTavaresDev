@@ -1,31 +1,30 @@
 import React from "react"
-import Hero from "../components/Hero"
-import AboutInfo from "../components/AboutInfo"
+import {useRouter} from 'next/router'
+import en from '../locales/en'
+import pt from '../locales/pt'
+import AboutInfo from "../components/aboutInfo/AboutInfo"
 import Contact from "../components/contact/Contact"
-
 import ProjectCarousel from "../components/projects/ProjectCarousel"
-import AboutServicesCarousel from "../components/about/AboutServicesCarousel"
+import AboutServicesCarousel from "../components/aboutServices/AboutServicesCarousel"
 import MyHero from "../components/hero/MyHero"
 
-const slogans = `Bring your business to the next level!
 
-We at Tavares Web SOLUTIONS  
-Take care of your web presence, using the best Tech available.
-
-Connect your business with the right clients.
-`
-
-const idea = `thru eCommerce website and social media, we present youR BUSSINES to the right clients`
 
 export default function Index() {
+	//i18n
+	const router = useRouter()
+	const { locale} = router
+	const t = locale === 'en' ? en : pt
+
+
 	return (
 		<>
 			
 			<MyHero
-				heroTitle={"web solutions"}
+				heroTitle={t.heroTitle}
 				heroTitleWord={"Tavares"}
-				subTitle={"We expand your reach, while you do what "}
-				subTitleWord={"you Love "}
+				subTitle={t.heroSubtitle}
+				subTitleWord={t.heroSubtitle2}
 			/>
 			
 
@@ -47,3 +46,13 @@ export default function Index() {
 		</>
 	)
 }
+
+
+const slogans = `Bring your business to the next level!
+
+We at Tavares Web SOLUTIONS  
+Take care of your web presence, using the best Tech available.
+
+Connect your business with the right clients.
+`
+const idea = `thru eCommerce website and social media, we present youR BUSSINES to the right clients`

@@ -1,4 +1,7 @@
 import React, { useState } from "react"
+import { useRouter } from 'next/router'
+import en from '../../locales/en'
+import pt from '../../locales/pt'
 import { Container, Grid, Box, Button, Typography } from "@material-ui/core"
 import TextField from "@material-ui/core/TextField"
 import emailjs from "emailjs-com"
@@ -7,8 +10,12 @@ import ContactModal from "./ContactModal"
 import Fade from "react-reveal/Fade"
 
 const Contact = () => {
-	const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+	//i18n
+	const router = useRouter()
+	const { locale } = router
+	const t = locale === 'en' ? en : pt
 
+	const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 	const closeModal = () => {
 		setIsContactModalOpen(false)
 		console.log("close")
@@ -55,7 +62,7 @@ const Contact = () => {
 						<Container>
 							<Box mb={5}>
 								<Typography variant='h4' component='h2'>
-									Get in touch
+									{t.contactTitle}
 								</Typography>
 							</Box>
 						</Container>
@@ -67,12 +74,12 @@ const Contact = () => {
 								direction='column'
 								justify='center'
 								alignItems='stretch'>
-								<TextField color='secondary' id='' label='Name' name='client_name' required />
+								<TextField color='secondary' id='' label={t.contactName} name='client_name' required />
 
 								<TextField
 									color='secondary'
 									id='standard-basic'
-									label='Email'
+									label={t.contactEmail}
 									name='client_email'
 									required
 								/>
@@ -80,7 +87,7 @@ const Contact = () => {
 									color='secondary'
 									required
 									id='standard-multiline-flexible'
-									label='Message'
+									label={t.contactMessage}
 									multiline
 									rows={3}
 									rowsMax={10}
@@ -92,7 +99,7 @@ const Contact = () => {
 										size='small'
 										variant='contained'
 										color='primary'>
-										Send
+										{t.contactButton}
 									</Button>
 								</Box>
 							</Grid>
