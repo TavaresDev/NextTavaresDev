@@ -1,13 +1,21 @@
 import React from "react"
+import { useRouter } from 'next/router'
+import en from '../../locales/en'
+import pt from '../../locales/pt'
 import Image from "next/image"
 import { Box, Container, Grid, Paper, Typography } from "@material-ui/core"
 import { fade, makeStyles } from "@material-ui/core/styles"
 import { blue } from "@material-ui/core/colors"
 
 import Fade from "react-reveal/Fade"
-import Wave from "./shared/wave/Wave"
+
 
 const AboutInfo = ({ text1, text2, order, bg }) => {
+	//i18n
+	const router = useRouter()
+	const { locale } = router
+	const t = locale === 'en' ? en : pt
+	
 	if (order == 2) {
 		return (
 			< >
@@ -30,18 +38,17 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 								<Fade left>
 									<Box py={2}>
 										<Typography variant='h5' component='h2'>
-											We are a modern company, using the best tech available to build solutions for your business.
+											{t.aboutText1}
 										</Typography>
 									</Box>
 									<Box py={2}>
 										<Typography variant='h5' component='h2'>
-
-											No themes, no pre-build or generic solutions. We create a fully functional custom solution for your business needs.
+										{t.aboutText2}
 										</Typography>
 									</Box>
 									<Box py={2}>
 										<Typography variant='h5' component='h2'>
-											Convert clients, show your ideas, sell your work, and build your online persona with all the freedom the internet allows.
+										{t.aboutText3}
 										</Typography>
 									</Box>
 								</Fade>
@@ -67,7 +74,7 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 	} else {
 		return (
 			<>
-				<Box style={{		boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2)'}} bgcolor='secondary.main' color='secondary.contrastText'>
+				<Box style={{ boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2)' }} bgcolor='secondary.main' color='secondary.contrastText'>
 					<Container>
 						<Grid container className='sec'>
 							<Grid item container xm={order - 2} xm={12} sm={12} md={6}>
@@ -96,17 +103,17 @@ const AboutInfo = ({ text1, text2, order, bg }) => {
 									<Fade right>
 										<Box py={2}>
 											<Typography variant='h5' component='h2'>
-											More than 51% of internet traffic is on mobile, and Only 9% of Google searchers make it to the bottom of the first page
+											{t.aboutText4}
 											</Typography>
 										</Box>
 										<Box py={2}>
 											<Typography variant='h5' component='h2'>
-											Your website needs to be on top of Google research and need to be mobile friendly to be relevant
+											{t.aboutText5}
 											</Typography>
 										</Box>
 										<Box py={2}>
 											<Typography variant='h5' component='h2'>
-											That what we do, using a mobile-first approach and the best Search Engine Optimization (SEO) strategies we build your site to have results
+											{t.aboutText6}
 											</Typography>
 										</Box>
 									</Fade>

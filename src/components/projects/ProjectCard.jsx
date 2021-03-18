@@ -48,7 +48,7 @@ const useStyles = makeStyles({
 		// marginLeft: "auto",
 		// marginRight: "0.5rem",
 		// marginBottom: "0.5rem",
-		padding: "0.6rem",
+		// padding: "0.6rem",
 		// borderRadius: "5px",
 		// color:'#fff',
 		textTransform: 'capitalize',
@@ -70,7 +70,7 @@ const useStyles = makeStyles({
 })
 
 
-const ProjectCard = ({title, bodyText, imgAlt, img, link}) => {
+const ProjectCard = ({title, bodyText, imgAlt, img, link, button}) => {
 	const classes = useStyles()
 	return (
 		<Card className={classes.root}>
@@ -78,7 +78,7 @@ const ProjectCard = ({title, bodyText, imgAlt, img, link}) => {
 				<CardMedia
 					component='img'
 					alt={imgAlt}
-					height='380'
+					height='360'
 					// width='380'
 					image={img}
 					title={imgAlt}
@@ -104,7 +104,7 @@ const ProjectCard = ({title, bodyText, imgAlt, img, link}) => {
 			<CardActions className={classes.posBottom}  >
 				<a href={link} target="_blank" style={{textDecoration:'none'}}>
 				<Button className={classes.button} variant ='contained' color='primary' size='small'>
-					See more
+					{button}
 				</Button>
 				</a>
 				{/* <Button size='small' color='secondary'>

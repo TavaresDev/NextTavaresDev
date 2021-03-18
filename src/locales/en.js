@@ -3,8 +3,9 @@ export default
         navLink1: 'services',
         navLink2: 'about us',
         navLink3: 'contact',
-        heroTitle: 'Tavares web Solutions en',
-        heroSubtitle: 'We expand your reach, while you do what enn',
+        heroTitle: 'web Solutions ',
+        heroSubtitle: 'We expand your reach, while you do what',
+        heroSubtitle2: 'you Love',
         servicesTitle: 'what we do',
         servicesSubtitle: 'Web solutions for your company',
         landingPage: 'Landing Page',
@@ -29,7 +30,8 @@ export default
         theGrowboxBody: 'Control box for your garden - A website made to showcase an automation project.',
         pomodoroTitle: 'Pomodoro App',
         pomodoroBody: 'Web application developed to help people suffering from procrastination. Based on the scientifically proved Pomodoro technique.',
-        mernBody: 'Complete eCommerce build with React, Node, Express and redux, for complete control over every aspect of the shoppiing experience',
+        mernTitle: 'Mern eCommerce',
+        mernBody: 'Complete eCommerce build with React, Node, Express and redux, for complete control over every aspect of the shopping experience',
         nextCommerceTitle: 'NextCommerce',
         nextCommerceBody: 'Fully functional eCommerce using Headless CMS. All the facilities from big commerce, like stock, organization, and security with the ability os modeling the front however you ',
         movieAppTitle: 'movie App',
@@ -39,6 +41,8 @@ export default
         contactEmail: 'Email',
         contactMessage: 'Message',
         contactButton: 'Send',
-        footer: 'Developed By Andre Tavares'
+        footer: 'Developed By Andre Tavares',
+        modalTitle : 'Thank you',
+        modalSubtitle : 'We will be in touch soon'
 
     }

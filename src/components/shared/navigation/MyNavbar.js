@@ -1,11 +1,13 @@
 import React from "react"
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router'
 
 import en from '../../../locales/en'
 import pt from '../../../locales/pt'
 import Header from "./Header"
 import { Grid, List, ListItem, Button } from "@material-ui/core"
-
+import InputLabel from '@material-ui/core/InputLabel';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
 import { makeStyles } from "@material-ui/core/styles"
 import styles from "./navbarsStyle.js"
 import Image from "next/image"
@@ -15,14 +17,14 @@ const useStyles = makeStyles(styles)
 const MyNavbar = () => {
 	const classes = useStyles()
 	const logo = ``
-	
+
 	const router = useRouter()
-	const { locale} = router
+	const { locale } = router
 	const t = locale === 'en' ? en : pt
 
 	const changeLanguage = (e) => {
 		const locale = e.target.value
-		router.push('/','/', {locale})
+		router.push('/', '/', { locale })
 	}
 
 	return (
@@ -35,20 +37,19 @@ const MyNavbar = () => {
 			rightLinks={
 				<List className={classes.list}>
 					<ListItem className={classes.listItem}>
-						<select onChange={changeLanguage}
-						defaultValue={locale}
-						 >
-							 <option value= 'en'>EN</option>
-							 <option value= 'pt'>PT</option>
-
-						</select>
-						<Button
-							href='#services'
-							className={classes.navLink + " "}
-						// onClick={(e) => e.preventDefault()}
+			
+						{/* <InputLabel id="demo-simple-select-label">Len</InputLabel> */}
+						<Select
+							labelId="demo-simple-select-label"
+							id="demo-simple-select"
+							value={locale}
+							onChange={changeLanguage}
 						>
-							Services
-						</Button>
+							<MenuItem value='en'>EN</MenuItem>
+							<MenuItem value='pt'>PT</MenuItem>
+					
+						</Select>
+			
 					</ListItem>
 				</List>
 			}

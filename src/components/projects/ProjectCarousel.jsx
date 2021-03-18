@@ -1,5 +1,8 @@
-import { Box, Grid, Typography, Container } from "@material-ui/core"
 import React from "react"
+import { useRouter } from 'next/router'
+import en from '../../locales/en'
+import pt from '../../locales/pt'
+import { Box, Grid, Typography, Container } from "@material-ui/core"
 import AliceCarousel from "react-alice-carousel"
 import "react-alice-carousel/lib/alice-carousel.css"
 import ProjectCard from "./ProjectCard"
@@ -12,80 +15,90 @@ const responsive = {
 	1024: { items: 3 },
 }
 
-const items = [
-	<Grid container justify='center' className='item' data-value='2'>
-		{/* <Fade bottom> */}
+const ProjectCarousel = () => {
+	//i18n
+	const router = useRouter()
+	const { locale } = router
+	const t = locale === 'en' ? en : pt
+
+	const items = [
+		<Grid container justify='center' className='item' data-value='2'>
+			{/* <Fade bottom> */}
 			<ProjectCard
 				img='/TheGrowBoxProjectSM.png'
 				imgAlt='The Grow box Project'
-				title='The Grow box'
-				bodyText='Control box for your garden - A website made to showcase an automation project.'
+				title={t.theGrowboxTitle}
+				bodyText={t.theGrowboxBody}
 				link='https://tavaresdev.github.io/TheGrowBox/'
+				button={t.projectsButton}
+
 			/>
-		{/* </Fade> */}
-	</Grid>,
-	<Grid container justify='center' className='item' data-value='3'>
-		{/* <Fade bottom> */}
+			{/* </Fade> */}
+		</Grid>,
+		<Grid container justify='center' className='item' data-value='3'>
+			{/* <Fade bottom> */}
 			<ProjectCard
 				img='/pomo.png'
 				imgAlt='project'
-				title='Pomodoro App'
-				bodyText='Web application developed to help people suffering from procrastination. Based on the scientifically proved Pomodoro technique.'
+				title={t.pomodoroTitle}
+				bodyText={t.pomodoroBody}
+				button={t.projectsButton}
 				link='https://pomodoronext.vercel.app/'
 			/>
-		{/* </Fade> */}
-	</Grid>,
-	<Grid container justify='center' className='item' data-value='1'>
-		{/* <Fade bottom> */}
+			{/* </Fade> */}
+		</Grid>,
+		<Grid container justify='center' className='item' data-value='1'>
+			{/* <Fade bottom> */}
 			<ProjectCard
 				img='/mernCenter.svg'
 				imgAlt='project'
-				title='Mern eCommerce'
+				title={t.nextCommerceTitle}
+				bodyText={t.nextCommerceBody}
+				button={t.projectsButton}
 				link='https://mern--ecommerce.herokuapp.com/'
-				bodyText='Complete eCommerce build with React, Node, Express and redux, for complete control over every aspect of the shopping experience.'
 			/>
-		{/* </Fade> */}
-	</Grid>,
-	<Grid container justify='center' className='item' data-value='4'>
-		{/* <Fade bottom> */}
+			{/* </Fade> */}
+		</Grid>,
+		<Grid container justify='center' className='item' data-value='4'>
+			{/* <Fade bottom> */}
 			<ProjectCard
 				img='/nextCommerce.png'
 				imgAlt='project'
-				title='NextCommerce'
+				title={t.movieAppTitle}
+				bodyText={t.movieAppBody}
+				button={t.projectsButton}
 				link='https://nextcommerce-kohl.vercel.app/'
-				bodyText='Fully functional eCommerce using Headless CMS. All the facilities from big commerce, like stock, organization, and security with the ability os modeling the front however you need.'
 			/>
-		{/* </Fade> */}
-	</Grid>,
-	<Grid container justify='center' className='item' data-value='5'>
-		{/* <Fade bottom> */}
+			{/* </Fade> */}
+		</Grid>,
+		<Grid container justify='center' className='item' data-value='5'>
+			{/* <Fade bottom> */}
 			<ProjectCard
 				img='/TheShoppies.png'
 				imgAlt='project'
-				title='MovieApp '
+				title={t.movieAppTitle}
+				bodyText={t.movieAppBody}
+				button={t.projectsButton}
 				link='https://tavaresdev.github.io/TheShoppies/'
-				bodyText='study case app, created with React, Node, Express,- App made for movie lovers, you can search movies, find information and where to watch them. Save your favorites and share with anyone.'
 			/>
-		{/* </Fade> */}
-	</Grid>,
-]
-
-const ProjectCarousel = () => {
+			{/* </Fade> */}
+		</Grid>,
+	]
 	return (
 		<Container className='sec'>
 			<Grid item xs={12} align='start'>
 				<Container>
 
-				<Fade bottom>
-					<Box m={3}>
-						<Typography variant={"h3"}>
-							<Box fontWeight='100'>Projects</Box>
-						</Typography>
-						<Typography gutterBottom variant={"h6"} color='secondary'>
-							<Box fontWeight='200'>Solutions made for our Partners</Box>
-						</Typography>
-					</Box>
-				</Fade>
+					<Fade bottom>
+						<Box m={3}>
+							<Typography variant={"h3"}>
+								<Box fontWeight='100'>{t.projectsTitle}</Box>
+							</Typography>
+							<Typography gutterBottom variant={"h6"} color='secondary'>
+								<Box fontWeight='200'>{t.projectsSubtitle}</Box>
+							</Typography>
+						</Box>
+					</Fade>
 				</Container>
 			</Grid>
 			<AliceCarousel
