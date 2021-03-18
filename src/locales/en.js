@@ -34,7 +34,7 @@ export default
         mernBody: 'Complete eCommerce build with React, Node, Express and redux, for complete control over every aspect of the shopping experience',
         nextCommerceTitle: 'NextCommerce',
         nextCommerceBody: 'Fully functional eCommerce using Headless CMS. All the facilities from big commerce, like stock, organization, and security with the ability os modeling the front however you ',
-        movieAppTitle: 'movie App',
+        movieAppTitle: 'Movie App',
         movieAppBody: 'study case app, created with React, Node, Express,- App made for movie lovers, you can search movies, find information and where to watch them. Save your favorites and share with anyone.',
         contactTitle: 'Get in touch',
         contactName: 'Name',

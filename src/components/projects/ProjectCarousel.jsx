@@ -52,8 +52,8 @@ const ProjectCarousel = () => {
 			<ProjectCard
 				img='/mernCenter.svg'
 				imgAlt='project'
-				title={t.nextCommerceTitle}
-				bodyText={t.nextCommerceBody}
+				title={t.mernTitle}
+				bodyText={t.mernBody}
 				button={t.projectsButton}
 				link='https://mern--ecommerce.herokuapp.com/'
 			/>
@@ -64,8 +64,8 @@ const ProjectCarousel = () => {
 			<ProjectCard
 				img='/nextCommerce.png'
 				imgAlt='project'
-				title={t.movieAppTitle}
-				bodyText={t.movieAppBody}
+				title={t.nextCommerceTitle}
+				bodyText={t.nextCommerceBody}
 				button={t.projectsButton}
 				link='https://nextcommerce-kohl.vercel.app/'
 			/>
