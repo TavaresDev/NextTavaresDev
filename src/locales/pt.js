@@ -25,7 +25,7 @@ export default
         aboutText6: 'É isso que fazemos, usando uma abordagem que prioriza os dispositivos móveis e as melhores estratégias de otimização de mecanismos de pesquisa (SEO), construímos seu site para ter resultados',
         projectsTitle: 'Projetos ',
         projectsSubtitle: 'Soluções feitas para nossos parceiros',
-        projectsButton: 'Ver mais',
+        projectsButton: 'Abrir exemplo',
         theGrowboxTitle: 'The Grow box',
         theGrowboxBody: 'Caixa de controle para o seu jardim - Site feito para mostrar o projeto de automação.',
         pomodoroTitle: 'Pomodoro App',
