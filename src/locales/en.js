@@ -6,7 +6,7 @@ export default
         heroTitle: 'web Solutions ',
         heroSubtitle: 'We expand your reach, while you do what',
         heroSubtitle2: 'you Love',
-        servicesTitle: 'what we do',
+        servicesTitle: 'What we do',
         servicesSubtitle: 'Web solutions for your company',
         landingPage: 'Landing Page',
         landingSubtitle: "Get leads, convert clients ",
@@ -25,7 +25,7 @@ export default
         aboutText6: 'That what we do, using a mobile-first approach and the best Search Engine Optimization (SEO) strategies we build your site to have results',
         projectsTitle: 'Projects',
         projectsSubtitle: 'Solutions made for our Partners',
-        projectsButton: 'See More',
+        projectsButton: 'Open Project',
         theGrowboxTitle: 'The Grow box',
         theGrowboxBody: 'Control box for your garden - A website made to showcase an automation project.',
         pomodoroTitle: 'Pomodoro App',
@@ -41,7 +41,7 @@ export default
         contactEmail: 'Email',
         contactMessage: 'Message',
         contactButton: 'Send',
-        footer: 'Developed By Andre Tavares',
+        footer: 'Developed By',
         modalTitle : 'Thank you',
         modalSubtitle : 'We will be in touch soon'
 
