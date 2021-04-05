@@ -17,7 +17,7 @@ const Footer = () => {
 		<Box className={styles.footer} mt={10} p={3} bgcolor='secondary.light'>
 			<Box component='footer'>
 
-				<Typography align='center'>{t.footer} <a className='footerLink' href="https://www.andretavares.dev/" target="_blank">
+				<Typography align='center'>{t.footer} <a className='footerLink' href="https://www.andretavares.dev/" rel="noreferrer" target="_blank">
 					André Tavares</a> &copy; {year}
 				</Typography>
 

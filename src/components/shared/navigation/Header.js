@@ -65,7 +65,7 @@ export default function Header(props) {
   });
   const brandComponent = (
     <Link href="/" as="/">
-      <Button className={classes.title}>{brand}</Button>
+      <Button aria-label="Home button" className={classes.title}>{brand}</Button>
     </Link>
   );
   return (

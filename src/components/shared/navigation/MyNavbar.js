@@ -30,7 +30,8 @@ const MyNavbar = () => {
 		<Header
 			brand={<Image
 				src='/tLogo.png'
-				width={40}
+				width={44}
+				alt="Brand Logo"
 				height={40}></Image>}
 			color='transparent'
 			rightLinks={
