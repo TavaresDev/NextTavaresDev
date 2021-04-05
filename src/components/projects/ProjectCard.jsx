@@ -102,7 +102,7 @@ const ProjectCard = ({title, bodyText, imgAlt, img, link, button}) => {
 					</Typography>
 				</CardContent>
 			<CardActions className={classes.posBottom}  >
-				<a href={link} target="_blank" style={{textDecoration:'none'}}>
+				<a href={link} target="_blank" rel="noreferrer" style={{textDecoration:'none'}}>
 				<Button className={classes.button} variant ='contained' color='primary' size='small'>
 					{button}
 				</Button>

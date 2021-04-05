@@ -47,6 +47,13 @@ export default function Index() {
 	)
 }
 
+// export const getStaticProps = () => {
+
+// 	return {
+
+// 	}
+// }
+
 
 const slogans = `Bring your business to the next level!
 

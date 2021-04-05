@@ -94,7 +94,7 @@ const ProjectCarousel = () => {
 							<Typography variant={"h3"}>
 								<Box fontWeight='100'>{t.projectsTitle}</Box>
 							</Typography>
-							<Typography gutterBottom variant={"h6"} color='secondary'>
+							<Typography gutterBottom variant={"h6"} component='h4' color='secondary'>
 								<Box fontWeight='200'>{t.projectsSubtitle}</Box>
 							</Typography>
 						</Box>
