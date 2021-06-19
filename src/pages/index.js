@@ -47,19 +47,3 @@ export default function Index() {
 	)
 }
 
-// export const getStaticProps = () => {
-
-// 	return {
-
-// 	}
-// }
-
-
-const slogans = `Bring your business to the next level!
-
-We at Tavares Web SOLUTIONS  
-Take care of your web presence, using the best Tech available.
-
-Connect your business with the right clients.
-`
-const idea = `thru eCommerce website and social media, we present youR BUSSINES to the right clients`
